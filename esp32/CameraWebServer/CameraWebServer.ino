@@ -11,8 +11,8 @@ WiFiServer server(8888);
 // ===========================
 // Enter your WiFi credentials
 // ===========================
-const char *ssid = "talha";
-const char *password = "asdqwe123";
+const char *ssid = "berkhan-pc";
+const char *password = "12345678";
 
 void startCameraServer();
 void setupLedFlash();
@@ -137,9 +137,7 @@ void loop() {
 
       if (client.available()) {
 
-        char cmd = client.read();
-
-        Serial.write(cmd);
+        Serial.write(client.read());
       }
     }
 

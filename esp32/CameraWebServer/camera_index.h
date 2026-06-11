@@ -1,4 +1,3 @@
-
 //File: index_ov2640.html.gz, Size: 6687
 #define index_ov2640_html_gz_len 6687
 const unsigned char index_ov2640_html_gz[] = {

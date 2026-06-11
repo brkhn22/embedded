@@ -12,8 +12,29 @@ const int enB = 6;
 const int in3 = 5;
 const int in4 = 4;
 
-int forwardSpeed = 120;
-int rotateSpeed = 90;
+// HC-SR04
+const int trigPin = 10;
+const int echoPin = 11;
+
+const int forwardSpeed = 120;
+const int rotateSpeed = 180;
+const int rotateKickSpeed = 230;
+const unsigned long rotateKickDurationMs = 180;
+const float stopDistanceCm = 20.0;
+const float resumeDistanceCm = 25.0;
+const unsigned long distanceReadIntervalMs = 60;
+const unsigned long commandTimeoutMs = 1000;
+const unsigned long echoTimeoutUs = 25000;
+
+char currentCommand = 'S';
+char pendingCommand = '\0';
+bool receivingCommand = false;
+float distanceCm = -1.0;
+bool obstacleBlocked = false;
+bool rotating = false;
+unsigned long lastCommandTime = 0;
+unsigned long lastDistanceReadTime = 0;
+unsigned long rotateStartTime = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -29,30 +50,100 @@ void setup() {
   pinMode(in3, OUTPUT);
   pinMode(in4, OUTPUT);
 
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  digitalWrite(trigPin, LOW);
+
   stopMotors();
 }
 
 void loop() {
-  if (espSerial.available()) {
-    char cmd = espSerial.read();
+  while (espSerial.available()) {
+    char received = espSerial.read();
 
-    Serial.println(cmd);
-
-    if (cmd == 'F') {
-      // Mavi görüldü, ileri git
-      moveForward(forwardSpeed);
-    }
-
-    else if (cmd == 'L') {
-      // Mavi yok, kendi etrafında yavaşça dönerek ara
-      rotateLeft(rotateSpeed);
-    }
-
-    else if (cmd == 'S') {
-      // Dur
-      stopMotors();
+    if (received == '<') {
+      receivingCommand = true;
+      pendingCommand = '\0';
+    } else if (receivingCommand && (
+        received == 'F' || received == 'L' || received == 'S')) {
+      pendingCommand = received;
+    } else if (receivingCommand && received == '>') {
+      if (pendingCommand != '\0') {
+        currentCommand = pendingCommand;
+        lastCommandTime = millis();
+        Serial.print("Command: ");
+        Serial.println(currentCommand);
+      }
+      receivingCommand = false;
+      pendingCommand = '\0';
+    } else if (receivingCommand) {
+      receivingCommand = false;
+      pendingCommand = '\0';
     }
   }
+
+  unsigned long now = millis();
+
+  if (now - lastDistanceReadTime >= distanceReadIntervalMs) {
+    distanceCm = readDistanceCm();
+    lastDistanceReadTime = now;
+
+    if (distanceCm > 0) {
+      if (obstacleBlocked) {
+        obstacleBlocked = distanceCm < resumeDistanceCm;
+      } else {
+        obstacleBlocked = distanceCm <= stopDistanceCm;
+      }
+    }
+
+    Serial.print("Distance: ");
+    if (distanceCm < 0) {
+      Serial.println("no echo");
+    } else {
+      Serial.print(distanceCm);
+      Serial.println(" cm");
+    }
+  }
+
+  bool commandExpired = now - lastCommandTime > commandTimeoutMs;
+
+  if (commandExpired || currentCommand == 'S' || obstacleBlocked) {
+    stopMotors();
+    rotating = false;
+  } else if (currentCommand == 'F') {
+    // Target color found and path is clear.
+    moveForward(forwardSpeed);
+    rotating = false;
+  } else if (currentCommand == 'L') {
+    // Target color not found; rotate to search.
+    if (!rotating) {
+      rotateStartTime = now;
+      rotating = true;
+    }
+    int speed = rotateSpeed;
+    if (now - rotateStartTime < rotateKickDurationMs) {
+      speed = rotateKickSpeed;
+    }
+    rotateLeft(speed);
+  } else {
+    stopMotors();
+    rotating = false;
+  }
+}
+
+float readDistanceCm() {
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+
+  unsigned long duration = pulseIn(echoPin, HIGH, echoTimeoutUs);
+  if (duration == 0) {
+    return -1.0;
+  }
+
+  return duration * 0.0343 / 2.0;
 }
 
 void moveForward(int speed) {

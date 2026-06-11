@@ -1,6 +1,7 @@
 import cv2
 import colorsys
 import numpy as np
+import os
 import socket
 import time
 from pathlib import Path
@@ -11,15 +12,37 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from opencv.web_client import WebControlClient
 
-# ESP32-CAM stream
-STREAM_URL = "http://192.168.137.90:81/stream"
+# ESP32-CAM address. ESP_IP must not include "http://".
+ESP_IP = os.environ.get("ESP_IP", "10.42.0.221")
+ESP_PORT = int(os.environ.get("ESP_PORT", "8888"))
+STREAM_URL = os.environ.get(
+    "STREAM_URL",
+    f"http://{ESP_IP}:81/stream",
+)
 
-# ESP32 socket
-ESP_IP = "192.168.137.90"
-ESP_PORT = 8888
 
-sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.connect((ESP_IP, ESP_PORT))
+def connect_to_esp():
+    while True:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        sock.settimeout(3)
+        try:
+            print(f"ESP32 komut baglantisi: {ESP_IP}:{ESP_PORT}")
+            sock.connect((ESP_IP, ESP_PORT))
+            sock.settimeout(None)
+            print("ESP32 komut baglantisi kuruldu.")
+            return sock
+        except (socket.gaierror, TimeoutError, OSError) as error:
+            sock.close()
+            print(f"ESP32 baglantisi basarisiz: {error}")
+            print("2 saniye sonra tekrar denenecek. Cikmak icin Ctrl+C.")
+            time.sleep(2)
+
+
+def send_command(sock, command):
+    sock.sendall(f"<{command}>".encode("ascii"))
+
+
+sock = connect_to_esp()
 
 print("Kameraya bağlanılıyor...")
 
@@ -36,6 +59,13 @@ def hex_to_opencv_hsv(hex_color):
     blue = int(hex_color[5:7], 16) / 255
     hue, saturation, value = colorsys.rgb_to_hsv(red, green, blue)
     return round(hue * 179), round(saturation * 255), round(value * 255)
+
+
+def hex_to_bgr(hex_color):
+    red = int(hex_color[1:3], 16)
+    green = int(hex_color[3:5], 16)
+    blue = int(hex_color[5:7], 16)
+    return blue, green, red
 
 
 def create_color_mask(hsv_frame, settings):
@@ -80,6 +110,7 @@ try:
             break
 
         settings = web_control.get_settings()
+        overlay_color = hex_to_bgr(settings["targetColor"])
         hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
         mask = create_color_mask(hsv, settings)
 
@@ -106,20 +137,38 @@ try:
                 target_detected = True
 
                 (x, y), radius = cv2.minEnclosingCircle(c)
+                center = (int(x), int(y))
+
+                # Black outline keeps the selected color visible on bright frames.
+                cv2.circle(
+                    frame,
+                    center,
+                    int(radius),
+                    (0, 0, 0),
+                    5
+                )
 
                 cv2.circle(
                     frame,
-                    (int(x), int(y)),
+                    center,
                     int(radius),
-                    (255, 255, 0),
+                    overlay_color,
                     2
                 )
 
                 cv2.circle(
                     frame,
-                    (int(x), int(y)),
-                    5,
-                    (255, 0, 0),
+                    center,
+                    6,
+                    (0, 0, 0),
+                    -1
+                )
+
+                cv2.circle(
+                    frame,
+                    center,
+                    4,
+                    overlay_color,
                     -1
                 )
 
@@ -129,7 +178,17 @@ try:
                     (10, 70),
                     cv2.FONT_HERSHEY_SIMPLEX,
                     0.8,
-                    (255, 0, 0),
+                    (0, 0, 0),
+                    5
+                )
+
+                cv2.putText(
+                    frame,
+                    "HEDEF GORULDU",
+                    (10, 70),
+                    cv2.FONT_HERSHEY_SIMPLEX,
+                    0.8,
+                    overlay_color,
                     2
                 )
 
@@ -137,7 +196,7 @@ try:
         current_time = time.time()
 
         if command != last_command or current_time - last_send_time >= SEND_INTERVAL:
-            sock.send(command.encode())
+            send_command(sock, command)
             last_command = command
             last_send_time = current_time
 
@@ -157,7 +216,7 @@ try:
         cv2.imshow("Hedef Renk Maskesi", mask)
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
-            sock.send('S'.encode())
+            send_command(sock, 'S')
             break
 finally:
     web_control.stop()
