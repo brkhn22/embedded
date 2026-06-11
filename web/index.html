@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Megatron Color Control</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="panel">
+      <header>
+        <p class="eyebrow">MEGATRON VISION</p>
+        <div id="connection-card" class="connection-card disconnected">
+          <span class="connection-dot" aria-hidden="true"></span>
+          <div>
+            <strong id="connection-title">OpenCV disconnected</strong>
+            <p id="connection-detail">Waiting for the vision process...</p>
+          </div>
+        </div>
+        <h1>Target color</h1>
+        <p class="subtitle">
+          Tune the color that the robotic car follows. Changes are applied
+          immediately to the running OpenCV process.
+        </p>
+      </header>
+
+      <form id="settings-form">
+        <section class="color-row">
+          <label for="targetColor">Pick a color</label>
+          <div class="picker-wrap">
+            <input id="targetColor" name="targetColor" type="color">
+            <output id="hex-value" for="targetColor"></output>
+          </div>
+        </section>
+
+        <section class="controls">
+          <label>
+            <span>Hue tolerance <output id="hueTolerance-value"></output></span>
+            <input
+              id="hueTolerance"
+              name="hueTolerance"
+              type="range"
+              min="0"
+              max="90"
+            >
+          </label>
+
+          <label>
+            <span>
+              Saturation tolerance
+              <output id="saturationTolerance-value"></output>
+            </span>
+            <input
+              id="saturationTolerance"
+              name="saturationTolerance"
+              type="range"
+              min="0"
+              max="255"
+            >
+          </label>
+
+          <label>
+            <span>
+              Brightness tolerance
+              <output id="valueTolerance-value"></output>
+            </span>
+            <input
+              id="valueTolerance"
+              name="valueTolerance"
+              type="range"
+              min="0"
+              max="255"
+            >
+          </label>
+
+          <label>
+            <span>
+              Minimum object area
+              <output id="minContourArea-value"></output>
+            </span>
+            <input
+              id="minContourArea"
+              name="minContourArea"
+              type="range"
+              min="1"
+              max="5000"
+              step="10"
+            >
+          </label>
+        </section>
+
+        <div class="status-row">
+          <span id="swatch" aria-hidden="true"></span>
+          <p id="status" role="status">Loading settings...</p>
+        </div>
+      </form>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
