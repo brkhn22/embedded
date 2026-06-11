@@ -9,17 +9,19 @@ from urllib.parse import urlparse
 
 DEFAULT_SETTINGS = {
     "targetColor": "#0066ff",
-    "hueTolerance": 20,
-    "saturationTolerance": 175,
-    "valueTolerance": 205,
-    "minContourArea": 300,
+    "hueTolerance": 15,
+    "saturationMin": 80,
+    "valueMin": 70,
+    "minContourArea": 400,
+    "minColorDensity": 25,
 }
 
 LIMITS = {
     "hueTolerance": (0, 90),
-    "saturationTolerance": (0, 255),
-    "valueTolerance": (0, 255),
+    "saturationMin": (0, 255),
+    "valueMin": (0, 255),
     "minContourArea": (1, 100000),
+    "minColorDensity": (1, 100),
 }
 
 
@@ -86,7 +88,14 @@ class VisionStatus:
 
         allowed_details = {
             key: details[key]
-            for key in ("command", "targetDetected")
+            for key in (
+                "command",
+                "targetDetected",
+                "fps",
+                "colorDensity",
+                "candidateArea",
+                "detectionState",
+            )
             if key in details
         }
         with self._lock:

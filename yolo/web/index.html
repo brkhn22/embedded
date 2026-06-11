@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Megatron YOLO Control</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="panel">
+      <header>
+        <p class="eyebrow">MEGATRON YOLO</p>
+        <div id="connection-card" class="connection-card disconnected">
+          <span class="connection-dot" aria-hidden="true"></span>
+          <div>
+            <strong id="connection-title">YOLO disconnected</strong>
+            <p id="connection-detail">Waiting for the detector process...</p>
+          </div>
+        </div>
+        <h1>Target object</h1>
+        <p class="subtitle">
+          Pick a COCO object class for the robotic car. Changes are applied
+          immediately to the running YOLO process.
+        </p>
+      </header>
+
+      <form id="settings-form">
+        <section class="picker-card">
+          <label for="targetClass">Pick an object</label>
+          <select id="targetClass" name="targetClass"></select>
+        </section>
+
+        <section class="controls">
+          <label>
+            <span>
+              Confidence threshold
+              <output id="confidence-value"></output>
+            </span>
+            <input
+              id="confidence"
+              name="confidence"
+              type="range"
+              min="0.05"
+              max="0.95"
+              step="0.01"
+            >
+          </label>
+        </section>
+
+        <div class="status-row">
+          <div id="target-badge" class="target-badge">--</div>
+          <p id="status" role="status">Loading settings...</p>
+        </div>
+      </form>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
+

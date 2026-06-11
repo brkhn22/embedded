@@ -7,10 +7,11 @@ from urllib.request import Request, urlopen
 
 DEFAULT_SETTINGS = {
     "targetColor": "#0066ff",
-    "hueTolerance": 20,
-    "saturationTolerance": 175,
-    "valueTolerance": 205,
-    "minContourArea": 300,
+    "hueTolerance": 15,
+    "saturationMin": 80,
+    "valueMin": 70,
+    "minContourArea": 400,
+    "minColorDensity": 25,
 }
 
 
@@ -39,11 +40,23 @@ class WebControlClient:
         with self._lock:
             return deepcopy(self._settings)
 
-    def update_status(self, command, target_detected):
+    def update_status(
+        self,
+        command,
+        target_detected,
+        fps=0,
+        color_density=0,
+        candidate_area=0,
+        detection_state="NO COLOR",
+    ):
         with self._lock:
             self._details = {
                 "command": command,
                 "targetDetected": target_detected,
+                "fps": round(fps, 1),
+                "colorDensity": round(color_density, 1),
+                "candidateArea": round(candidate_area),
+                "detectionState": detection_state,
             }
 
     def _run(self):
@@ -61,7 +74,10 @@ class WebControlClient:
                 with urlopen(request, timeout=1) as response:
                     settings = json.load(response)
                 with self._lock:
-                    self._settings = settings
+                    self._settings = {
+                        **DEFAULT_SETTINGS,
+                        **settings,
+                    }
             except (URLError, TimeoutError, json.JSONDecodeError, OSError):
                 pass
 

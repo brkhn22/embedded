@@ -7,9 +7,10 @@ const connectionDetail = document.querySelector("#connection-detail");
 const fields = [
   "targetColor",
   "hueTolerance",
-  "saturationTolerance",
-  "valueTolerance",
+  "saturationMin",
+  "valueMin",
   "minContourArea",
+  "minColorDensity",
 ];
 
 let sendTimer;
@@ -33,9 +34,10 @@ function readSettings() {
   return {
     targetColor: form.targetColor.value,
     hueTolerance: Number(form.hueTolerance.value),
-    saturationTolerance: Number(form.saturationTolerance.value),
-    valueTolerance: Number(form.valueTolerance.value),
+    saturationMin: Number(form.saturationMin.value),
+    valueMin: Number(form.valueMin.value),
     minContourArea: Number(form.minContourArea.value),
+    minColorDensity: Number(form.minColorDensity.value),
   };
 }
 
@@ -87,9 +89,17 @@ async function loadConnectionStatus() {
 
     if (status.visionConnected) {
       connectionTitle.textContent = "OpenCV connected";
-      const target = status.targetDetected ? "target detected" : "searching";
       const command = status.command ? `Command ${status.command}` : "No command yet";
-      connectionDetail.textContent = `${command} · ${target}`;
+      const fps = Number.isFinite(status.fps) ? `${status.fps} FPS` : "FPS --";
+      const density = Number.isFinite(status.colorDensity)
+        ? `${status.colorDensity}% density`
+        : "density --";
+      const area = Number.isFinite(status.candidateArea)
+        ? `area ${status.candidateArea}`
+        : "area --";
+      const state = status.detectionState || "UNKNOWN";
+      connectionDetail.textContent =
+        `${command} · ${state} · ${fps} · ${density} · ${area}`;
     } else {
       connectionTitle.textContent = "OpenCV disconnected";
       connectionDetail.textContent =

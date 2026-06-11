@@ -17,9 +17,10 @@ const int trigPin = 10;
 const int echoPin = 11;
 
 const int forwardSpeed = 120;
-const int rotateSpeed = 180;
-const int rotateKickSpeed = 230;
-const unsigned long rotateKickDurationMs = 180;
+const int searchTurnSpeed = 150;
+const int trackTurnSpeed = 130;
+const int turnKickSpeed = 180;
+const unsigned long turnKickDurationMs = 150;
 const float stopDistanceCm = 20.0;
 const float resumeDistanceCm = 25.0;
 const unsigned long distanceReadIntervalMs = 60;
@@ -31,10 +32,10 @@ char pendingCommand = '\0';
 bool receivingCommand = false;
 float distanceCm = -1.0;
 bool obstacleBlocked = false;
-bool rotating = false;
 unsigned long lastCommandTime = 0;
 unsigned long lastDistanceReadTime = 0;
-unsigned long rotateStartTime = 0;
+unsigned long turnStartTime = 0;
+char lastTurnCommand = 'S';
 
 void setup() {
   Serial.begin(9600);
@@ -65,14 +66,18 @@ void loop() {
       receivingCommand = true;
       pendingCommand = '\0';
     } else if (receivingCommand && (
-        received == 'F' || received == 'L' || received == 'S')) {
+        received == 'F' || received == 'L' || received == 'R'
+        || received == 'S' || received == 'T')) {
       pendingCommand = received;
     } else if (receivingCommand && received == '>') {
       if (pendingCommand != '\0') {
+        bool commandChanged = currentCommand != pendingCommand;
         currentCommand = pendingCommand;
         lastCommandTime = millis();
-        Serial.print("Command: ");
-        Serial.println(currentCommand);
+        if (commandChanged) {
+          Serial.print("Command: ");
+          Serial.println(currentCommand);
+        }
       }
       receivingCommand = false;
       pendingCommand = '\0';
@@ -96,6 +101,7 @@ void loop() {
       }
     }
 
+
     Serial.print("Distance: ");
     if (distanceCm < 0) {
       Serial.println("no echo");
@@ -106,29 +112,49 @@ void loop() {
   }
 
   bool commandExpired = now - lastCommandTime > commandTimeoutMs;
+  bool targetTrackingCommand = (
+    currentCommand == 'F'
+    || currentCommand == 'L'
+    || currentCommand == 'R'
+  );
+  bool shouldStopForObstacle = targetTrackingCommand && obstacleBlocked;
 
-  if (commandExpired || currentCommand == 'S' || obstacleBlocked) {
+  if (commandExpired || currentCommand == 'S' || shouldStopForObstacle) {
     stopMotors();
-    rotating = false;
+    lastTurnCommand = 'S';
   } else if (currentCommand == 'F') {
     // Target color found and path is clear.
     moveForward(forwardSpeed);
-    rotating = false;
+    lastTurnCommand = 'S';
   } else if (currentCommand == 'L') {
-    // Target color not found; rotate to search.
-    if (!rotating) {
-      rotateStartTime = now;
-      rotating = true;
-    }
-    int speed = rotateSpeed;
-    if (now - rotateStartTime < rotateKickDurationMs) {
-      speed = rotateKickSpeed;
-    }
+    // Target visible on the left side; steer left to center it.
+    int speed = beginTurnIfNeeded(now, 'L', trackTurnSpeed);
+    rotateLeft(speed);
+  } else if (currentCommand == 'R') {
+    // Target visible on the right side; steer right to center it.
+    int speed = beginTurnIfNeeded(now, 'R', trackTurnSpeed);
+    rotateRight(speed);
+  } else if (currentCommand == 'T') {
+    // No target visible; spin to search.
+    int speed = beginTurnIfNeeded(now, 'T', searchTurnSpeed);
     rotateLeft(speed);
   } else {
     stopMotors();
-    rotating = false;
+    lastTurnCommand = 'S';
   }
+}
+
+int beginTurnIfNeeded(unsigned long now, char turnCommand, int baseSpeed) {
+  if (lastTurnCommand != turnCommand) {
+    turnStartTime = now;
+    lastTurnCommand = turnCommand;
+  }
+
+  if (now - turnStartTime < turnKickDurationMs) {
+    return turnKickSpeed;
+  }
+
+  return baseSpeed;
 }
 
 float readDistanceCm() {
@@ -168,6 +194,19 @@ void rotateLeft(int speed) {
   // Sağ motor ileri
   digitalWrite(in3, HIGH);
   digitalWrite(in4, LOW);
+}
+
+void rotateRight(int speed) {
+  analogWrite(enA, speed);
+  analogWrite(enB, speed);
+
+  // Sol motor ileri
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
+
+  // Sağ motor geri
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
 }
 
 void stopMotors() {

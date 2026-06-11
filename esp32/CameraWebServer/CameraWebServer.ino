@@ -16,10 +16,12 @@ const char *password = "12345678";
 
 void startCameraServer();
 void setupLedFlash();
+void applyColorDetectionCameraSettings();
+void ensureWiFiConnected();
 
 void setup() {
   Serial.begin(115200);
-  Serial.setDebugOutput(true);
+  Serial.setDebugOutput(false);
   Serial.println();
 
   camera_config_t config;
@@ -108,16 +110,8 @@ void setup() {
   setupLedFlash();
 #endif
 
-  WiFi.begin(ssid, password);
   WiFi.setSleep(false);
-
-  Serial.print("WiFi connecting");
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-  Serial.println("");
-  Serial.println("WiFi connected");
+  ensureWiFiConnected();
 
   startCameraServer();
   server.begin();
@@ -127,7 +121,43 @@ void setup() {
   Serial.println("' to connect");
 }
 
+void applyColorDetectionCameraSettings() {
+  sensor_t *s = esp_camera_sensor_get();
+  if (!s) return;
+
+  // Basic image
+  s->set_special_effect(s, 0);
+  s->set_brightness(s, 0);
+  s->set_contrast(s, 0);
+  s->set_saturation(s, 1);
+
+  // Lock color behavior
+  s->set_whitebal(s, 0);      // awb off
+  s->set_awb_gain(s, 0);      // awb gain off
+  s->set_wb_mode(s, 1);       // 1 sunny; try 3 office indoors
+
+  // Lock exposure
+  s->set_exposure_ctrl(s, 0); // aec off
+  s->set_aec2(s, 0);
+  s->set_ae_level(s, 0);
+  s->set_aec_value(s, 300);   // tune: 150-700 usually
+
+  // Lock gain
+  s->set_gain_ctrl(s, 0);     // agc off
+  s->set_agc_gain(s, 5);      // tune: 0-30
+  s->set_gainceiling(s, (gainceiling_t)0);
+
+  // Cleanup / correction
+  s->set_bpc(s, 0);
+  s->set_wpc(s, 1);
+  s->set_raw_gma(s, 1);
+  s->set_lenc(s, 1);
+  s->set_dcw(s, 1);
+  s->set_colorbar(s, 0);
+}
+
 void loop() {
+  ensureWiFiConnected();
 
   WiFiClient client = server.available();
 
@@ -145,4 +175,33 @@ void loop() {
   }
 
   delay(10);
+}
+
+void ensureWiFiConnected() {
+  static bool serverStarted = false;
+
+  if (WiFi.status() == WL_CONNECTED) {
+    return;
+  }
+
+  Serial.println("WiFi disconnected, reconnecting...");
+  WiFi.disconnect();
+  WiFi.begin(ssid, password);
+
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.print("Camera Ready! Use 'http://");
+  Serial.print(WiFi.localIP());
+  Serial.println("' to connect");
+
+  if (serverStarted) {
+    server.stop();
+  }
+  server.begin();
+  serverStarted = true;
 }
