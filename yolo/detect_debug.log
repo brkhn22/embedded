@@ -1,0 +1,1201 @@
+2026-06-21 23:50:31 detect.py started
+2026-06-21 23:50:32 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:50:39 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:50:42 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:50:46 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:50:46 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:50:49 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=24 cy=62 ex=-136 ey=-58 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:50:49 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-136 lock=0 last=L blocked=0
+2026-06-21 23:50:49 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-136 lock=0 last=L blocked=0
+2026-06-21 23:50:50 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:50:51 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:50:54 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:50:59 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=210 cy=177 ex=50 ey=57 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=178 ex=48 ey=58 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=178 ex=48 ey=58 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=178 ex=48 ey=58 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:50:59 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=180 ex=48 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=180 ex=48 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=178 ex=48 ey=58 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=180 ex=48 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=215 cy=181 ex=55 ey=61 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=55 lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=201 cy=178 ex=41 ey=58 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=180 ex=48 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=178 ex=48 ey=58 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=180 ex=48 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=209 cy=180 ex=49 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=49 lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=178 ex=48 ey=58 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=209 cy=180 ex=49 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=180 ex=48 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=178 ex=48 ey=58 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:00 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=180 ex=48 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=180 ex=48 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=209 cy=180 ex=49 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=49 lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=181 ex=48 ey=61 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=180 ex=48 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=181 ex=48 ey=61 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=180 ex=48 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=181 ex=48 ey=61 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=180 ex=48 ey=60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=208 cy=179 ex=48 ey=59 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:02 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=48 lock=0 last=S blocked=0
+2026-06-21 23:51:02 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:51:05 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:51:09 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:51:14 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=22 cy=99 ex=-138 ey=-21 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:14 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=22 cy=98 ex=-138 ey=-22 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:14 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=22 cy=101 ex=-138 ey=-19 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:14 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=21 cy=100 ex=-139 ey=-20 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:14 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=22 cy=101 ex=-138 ey=-19 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:14 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=21 cy=100 ex=-139 ey=-20 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:14 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=22 cy=101 ex=-138 ey=-19 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:14 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=21 cy=101 ex=-139 ey=-19 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:14 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=22 cy=101 ex=-138 ey=-19 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:14 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-138 lock=0 last=S blocked=0
+2026-06-21 23:51:14 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=30 cy=101 ex=-130 ey=-19 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:14 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-130 lock=0 last=L blocked=0
+2026-06-21 23:51:14 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-130 lock=0 last=L blocked=0
+2026-06-21 23:51:14 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=144 cy=82 ex=-16 ey=-38 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:14 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=147 cy=81 ex=-13 ey=-39 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:14 cmd=F state=ADVANCING src=LIVE visible=1 cx=145 cy=82 ex=-15 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:14 cmd=F state=ADVANCING src=LIVE visible=1 cx=144 cy=82 ex=-16 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:14 cmd=F state=ADVANCING src=LIVE visible=1 cx=145 cy=83 ex=-15 ey=-37 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:14 cmd=F state=ADVANCING src=LIVE visible=1 cx=144 cy=83 ex=-16 ey=-37 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:14 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:14 cmd=F state=ADVANCING src=LIVE visible=1 cx=144 cy=82 ex=-16 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:14 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:14 cmd=F state=ADVANCING src=LIVE visible=1 cx=144 cy=82 ex=-16 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:14 cmd=F state=ADVANCING src=LIVE visible=1 cx=143 cy=82 ex=-17 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:14 cmd=F state=APPROACHING src=LIVE visible=1 cx=145 cy=81 ex=-15 ey=-39 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:14 cmd=F state=APPROACHING src=LIVE visible=1 cx=150 cy=81 ex=-10 ey=-39 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:14 cmd=F state=APPROACHING src=LIVE visible=1 cx=152 cy=80 ex=-8 ey=-40 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACHING src=LIVE visible=1 cx=157 cy=81 ex=-3 ey=-39 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACHING src=LIVE visible=1 cx=160 cy=80 ex=0 ey=-40 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACHING src=LIVE visible=1 cx=161 cy=80 ex=1 ey=-40 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACHING src=LIVE visible=1 cx=163 cy=81 ex=3 ey=-39 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACHING src=LIVE visible=1 cx=168 cy=80 ex=8 ey=-40 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACHING src=LIVE visible=1 cx=169 cy=80 ex=9 ey=-40 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACHING src=LIVE visible=1 cx=174 cy=81 ex=14 ey=-39 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=176 cy=82 ex=16 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACHING src=LIVE visible=1 cx=176 cy=81 ex=16 ey=-39 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=177 cy=83 ex=17 ey=-37 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=183 cy=82 ex=23 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=184 cy=82 ex=24 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=187 cy=87 ex=27 ey=-33 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACHING src=LIVE visible=1 cx=200 cy=43 ex=40 ey=-77 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=193 cy=86 ex=33 ey=-34 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=194 cy=87 ex=34 ey=-33 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=195 cy=87 ex=35 ey=-33 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=196 cy=88 ex=36 ey=-32 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=197 cy=89 ex=37 ey=-31 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=197 cy=90 ex=37 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=199 cy=90 ex=39 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=200 cy=92 ex=40 ey=-28 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=ADVANCING src=LIVE visible=1 cx=200 cy=94 ex=40 ey=-26 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:15 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:17 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:51:18 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:51:19 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:51:21 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:51:24 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=192 cy=96 ex=32 ey=-24 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:24 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=32 lock=0 last=S blocked=0
+2026-06-21 23:51:25 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:51:30 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:51:34 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:51:36 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=80 cy=116 ex=-80 ey=-4 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:36 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-80 lock=0 last=L blocked=0
+2026-06-21 23:51:37 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=80 cy=116 ex=-80 ey=-4 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:37 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-80 lock=0 last=L blocked=0
+2026-06-21 23:51:37 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=27 cy=111 ex=-133 ey=-9 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:37 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-133 lock=0 last=L blocked=0
+2026-06-21 23:51:37 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=95 cy=113 ex=-65 ey=-7 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:37 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-65 lock=0 last=L blocked=0
+2026-06-21 23:51:37 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-65 lock=0 last=L blocked=0
+2026-06-21 23:51:37 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:51:43 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=71 cy=85 ex=-89 ey=-35 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:43 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=72 cy=84 ex=-88 ey=-36 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:43 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-88 lock=0 last=L blocked=0
+2026-06-21 23:51:43 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-88 lock=0 last=L blocked=0
+2026-06-21 23:51:44 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=117 cy=78 ex=-43 ey=-42 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:44 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=119 cy=78 ex=-41 ey=-42 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=119 cy=79 ex=-41 ey=-41 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=118 cy=78 ex=-42 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=117 cy=78 ex=-43 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=117 cy=79 ex=-43 ey=-41 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=119 cy=79 ex=-41 ey=-41 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=117 cy=78 ex=-43 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=116 cy=79 ex=-44 ey=-41 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=115 cy=79 ex=-45 ey=-41 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=110 cy=79 ex=-50 ey=-41 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=112 cy=78 ex=-48 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=115 cy=78 ex=-45 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=116 cy=77 ex=-44 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=117 cy=77 ex=-43 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=118 cy=77 ex=-42 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=119 cy=77 ex=-41 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACHING src=LIVE visible=1 cx=119 cy=78 ex=-41 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:44 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:45 cmd=F state=ADVANCING src=LIVE visible=1 cx=126 cy=82 ex=-34 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:45 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:45 cmd=F state=ADVANCING src=LIVE visible=1 cx=127 cy=87 ex=-33 ey=-33 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:45 cmd=F state=ADVANCING src=LIVE visible=1 cx=126 cy=88 ex=-34 ey=-32 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:45 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:45 cmd=F state=ADVANCING src=LIVE visible=1 cx=125 cy=90 ex=-35 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:45 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:45 cmd=F state=ADVANCING src=LIVE visible=1 cx=122 cy=95 ex=-38 ey=-25 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:45 cmd=F state=ADVANCING src=LIVE visible=1 cx=124 cy=96 ex=-36 ey=-24 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:45 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:51:45 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:51:53 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:51:53 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=95 cy=188 ex=-65 ey=68 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:51:53 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-65 lock=0 last=L blocked=0
+2026-06-21 23:51:54 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-65 lock=0 last=L blocked=0
+2026-06-21 23:51:54 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=217 cy=169 ex=57 ey=49 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:51:54 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=220 cy=165 ex=60 ey=45 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:51:54 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=60 lock=0 last=R blocked=0
+2026-06-21 23:51:54 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=243 cy=147 ex=83 ey=27 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:51:54 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=83 lock=0 last=R blocked=0
+2026-06-21 23:51:54 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=83 lock=0 last=R blocked=0
+2026-06-21 23:51:54 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:52:00 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=52 cy=195 ex=-108 ey=75 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:00 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=48 cy=196 ex=-112 ey=76 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:00 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=54 cy=196 ex=-106 ey=76 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:00 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=48 cy=196 ex=-112 ey=76 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:00 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=49 cy=196 ex=-111 ey=76 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:00 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=53 cy=196 ex=-107 ey=76 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:00 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=50 cy=197 ex=-110 ey=77 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:01 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=51 cy=195 ex=-109 ey=75 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:01 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-109 lock=0 last=S blocked=0
+2026-06-21 23:52:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-109 lock=0 last=S blocked=0
+2026-06-21 23:52:01 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=82 cy=190 ex=-78 ey=70 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:01 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=82 cy=189 ex=-78 ey=69 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:01 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=85 cy=188 ex=-75 ey=68 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:01 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-75 lock=0 last=L blocked=0
+2026-06-21 23:52:01 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=83 cy=190 ex=-77 ey=70 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:01 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=86 cy=191 ex=-74 ey=71 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:01 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-74 lock=0 last=L blocked=0
+2026-06-21 23:52:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-74 lock=0 last=L blocked=0
+2026-06-21 23:52:01 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:52:01 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=226 cy=161 ex=66 ey=41 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:01 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=66 lock=0 last=R blocked=0
+2026-06-21 23:52:01 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=228 cy=163 ex=68 ey=43 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:01 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=68 lock=0 last=R blocked=0
+2026-06-21 23:52:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=68 lock=0 last=R blocked=0
+2026-06-21 23:52:01 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=228 cy=163 ex=68 ey=43 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:01 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=68 lock=0 last=R blocked=0
+2026-06-21 23:52:02 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=226 cy=161 ex=66 ey=41 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:02 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=66 lock=0 last=R blocked=0
+2026-06-21 23:52:02 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=66 lock=0 last=R blocked=0
+2026-06-21 23:52:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=185 cy=166 ex=25 ey=46 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=25 lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=184 cy=166 ex=24 ey=46 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=199 cy=170 ex=39 ey=50 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=199 cy=171 ex=39 ey=51 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=198 cy=171 ex=38 ey=51 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=185 cy=165 ex=25 ey=45 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=199 cy=170 ex=39 ey=50 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=198 cy=170 ex=38 ey=50 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=38 lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=185 cy=165 ex=25 ey=45 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=198 cy=169 ex=38 ey=49 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=185 cy=166 ex=25 ey=46 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:02 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=25 lock=0 last=S blocked=0
+2026-06-21 23:52:03 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:52:04 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=48 cy=89 ex=-112 ey=-31 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:04 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-112 lock=0 last=L blocked=0
+2026-06-21 23:52:04 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-112 lock=0 last=L blocked=0
+2026-06-21 23:52:04 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=122 cy=77 ex=-38 ey=-43 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:04 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-38 lock=0 last=S blocked=0
+2026-06-21 23:52:04 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=121 cy=77 ex=-39 ey=-43 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=122 cy=77 ex=-38 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=122 cy=77 ex=-38 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=124 cy=77 ex=-36 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=123 cy=77 ex=-37 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=126 cy=76 ex=-34 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=123 cy=79 ex=-37 ey=-41 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=125 cy=76 ex=-35 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=123 cy=77 ex=-37 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=123 cy=76 ex=-37 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=121 cy=77 ex=-39 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=120 cy=78 ex=-40 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACHING src=LIVE visible=1 cx=120 cy=77 ex=-40 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:04 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=119 cy=77 ex=-41 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=117 cy=77 ex=-43 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=118 cy=78 ex=-42 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=117 cy=77 ex=-43 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=118 cy=78 ex=-42 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=116 cy=77 ex=-44 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=118 cy=76 ex=-42 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=120 cy=77 ex=-40 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=122 cy=78 ex=-38 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=123 cy=76 ex=-37 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=124 cy=77 ex=-36 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=128 cy=78 ex=-32 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=128 cy=79 ex=-32 ey=-41 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACHING src=LIVE visible=1 cx=128 cy=80 ex=-32 ey=-40 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=ADVANCING src=LIVE visible=1 cx=129 cy=83 ex=-31 ey=-37 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=ADVANCING src=LIVE visible=1 cx=131 cy=82 ex=-29 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=ADVANCING src=LIVE visible=1 cx=133 cy=82 ex=-27 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=ADVANCING src=LIVE visible=1 cx=132 cy=83 ex=-28 ey=-37 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=ADVANCING src=LIVE visible=1 cx=133 cy=83 ex=-27 ey=-37 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=ADVANCING src=LIVE visible=1 cx=134 cy=83 ex=-26 ey=-37 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=ADVANCING src=LIVE visible=1 cx=137 cy=87 ex=-23 ey=-33 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=ADVANCING src=LIVE visible=1 cx=138 cy=88 ex=-22 ey=-32 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=ADVANCING src=LIVE visible=1 cx=140 cy=91 ex=-20 ey=-29 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=ADVANCING src=LIVE visible=1 cx=143 cy=91 ex=-17 ey=-29 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=ADVANCING src=LIVE visible=1 cx=141 cy=93 ex=-19 ey=-27 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:05 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:06 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:52:09 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:52:19 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:52:21 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:52:21 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=163 cy=219 ex=3 ey=99 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:21 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=3 lock=0 last=S blocked=0
+2026-06-21 23:52:21 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:52:22 cmd=S state=REVERSAL WAIT 1/3 src=LIVE visible=1 cx=288 cy=165 ex=128 ey=45 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:22 cmd=S state=REVERSAL WAIT 2/3 src=LIVE visible=1 cx=284 cy=165 ex=124 ey=45 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:22 cmd=S state=REVERSAL WAIT 3/3 src=LIVE visible=1 cx=284 cy=165 ex=124 ey=45 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:22 cmd=S state=REVERSAL WAIT 4/3 src=LIVE visible=1 cx=284 cy=165 ex=124 ey=45 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:22 cmd=S state=REVERSAL WAIT 5/3 src=LIVE visible=1 cx=287 cy=167 ex=127 ey=47 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:22 cmd=S state=REVERSAL WAIT 6/3 src=LIVE visible=1 cx=284 cy=167 ex=124 ey=47 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:22 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=283 cy=165 ex=123 ey=45 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=282 cy=165 ex=122 ey=45 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=287 cy=165 ex=127 ey=45 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=287 cy=166 ex=127 ey=46 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=284 cy=167 ex=124 ey=47 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=283 cy=165 ex=123 ey=45 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:23 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=283 cy=166 ex=123 ey=46 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:23 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=123 lock=0 last=S blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=285 cy=166 ex=125 ey=46 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=125 lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=125 lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=234 cy=173 ex=74 ey=53 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=239 cy=173 ex=79 ey=53 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=235 cy=175 ex=75 ey=55 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=234 cy=173 ex=74 ey=53 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=235 cy=171 ex=75 ey=51 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=238 cy=173 ex=78 ey=53 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=235 cy=172 ex=75 ey=52 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:23 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=235 cy=173 ex=75 ey=53 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:23 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=235 cy=171 ex=75 ey=51 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:23 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=235 cy=172 ex=75 ey=52 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:23 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=235 cy=174 ex=75 ey=54 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:23 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=227 cy=171 ex=67 ey=51 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:23 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=226 cy=173 ex=66 ey=53 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=66 lock=0 last=R blocked=0
+2026-06-21 23:52:23 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=66 lock=0 last=R blocked=0
+2026-06-21 23:52:24 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=161 cy=198 ex=1 ey=78 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:24 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=1 lock=0 last=S blocked=0
+2026-06-21 23:52:24 cmd=S state=TOO CLOSE IN FRAME src=LIVE visible=1 cx=162 cy=194 ex=2 ey=74 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:24 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=2 lock=0 last=S blocked=0
+2026-06-21 23:52:24 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:52:27 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:52:27 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=102 cy=80 ex=-58 ey=-40 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:27 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-58 lock=0 last=L blocked=0
+2026-06-21 23:52:27 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=99 cy=81 ex=-61 ey=-39 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:52:27 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-61 lock=0 last=L blocked=0
+2026-06-21 23:52:28 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-61 lock=0 last=L blocked=0
+2026-06-21 23:52:28 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=170 cy=70 ex=10 ey=-50 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:28 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=10 lock=0 last=S blocked=0
+2026-06-21 23:52:28 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=230 cy=63 ex=70 ey=-57 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:28 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=229 cy=63 ex=69 ey=-57 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:28 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=227 cy=63 ex=67 ey=-57 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:28 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=226 cy=63 ex=66 ey=-57 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:52:28 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=226 cy=63 ex=66 ey=-57 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:28 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=225 cy=63 ex=65 ey=-57 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:28 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=227 cy=63 ex=67 ey=-57 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:28 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=67 lock=0 last=S blocked=0
+2026-06-21 23:52:28 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=217 cy=65 ex=57 ey=-55 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:28 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=216 cy=65 ex=56 ey=-55 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:52:28 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=56 lock=0 last=S blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=207 cy=66 ex=47 ey=-54 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=205 cy=66 ex=45 ey=-54 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=200 cy=68 ex=40 ey=-52 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=194 cy=68 ex=34 ey=-52 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=184 cy=70 ex=24 ey=-50 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=173 cy=73 ex=13 ey=-47 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=167 cy=73 ex=7 ey=-47 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=158 cy=73 ex=-2 ey=-47 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=153 cy=73 ex=-7 ey=-47 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=151 cy=74 ex=-9 ey=-46 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=149 cy=74 ex=-11 ey=-46 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=148 cy=74 ex=-12 ey=-46 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=145 cy=75 ex=-15 ey=-45 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=144 cy=75 ex=-16 ey=-45 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=143 cy=76 ex=-17 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:28 cmd=F state=APPROACHING src=LIVE visible=1 cx=142 cy=75 ex=-18 ey=-45 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=141 cy=76 ex=-19 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=138 cy=75 ex=-22 ey=-45 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=140 cy=75 ex=-20 ey=-45 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=139 cy=76 ex=-21 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=138 cy=76 ex=-22 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=137 cy=75 ex=-23 ey=-45 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=139 cy=75 ex=-21 ey=-45 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=138 cy=76 ex=-22 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=139 cy=76 ex=-21 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=140 cy=76 ex=-20 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=140 cy=75 ex=-20 ey=-45 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=144 cy=79 ex=-16 ey=-41 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=147 cy=79 ex=-13 ey=-41 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=150 cy=80 ex=-10 ey=-40 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACHING src=LIVE visible=1 cx=152 cy=81 ex=-8 ey=-39 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=ADVANCING src=LIVE visible=1 cx=155 cy=82 ex=-5 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=ADVANCING src=LIVE visible=1 cx=156 cy=83 ex=-4 ey=-37 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=ADVANCING src=LIVE visible=1 cx=158 cy=84 ex=-2 ey=-36 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=ADVANCING src=LIVE visible=1 cx=162 cy=86 ex=2 ey=-34 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=ADVANCING src=LIVE visible=1 cx=163 cy=86 ex=3 ey=-34 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=ADVANCING src=LIVE visible=1 cx=168 cy=90 ex=8 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:29 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:52:31 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:27 detect.py started
+2026-06-21 23:54:30 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:54:33 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=33 cy=47 ex=-127 ey=-73 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:54:33 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-127 lock=0 last=L blocked=0
+2026-06-21 23:54:33 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=31 cy=47 ex=-129 ey=-73 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:54:33 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-129 lock=0 last=L blocked=0
+2026-06-21 23:54:33 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-129 lock=0 last=L blocked=0
+2026-06-21 23:54:34 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:54:34 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=182 cy=28 ex=22 ey=-92 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:54:34 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=182 cy=28 ex=22 ey=-92 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:54:34 cmd=F state=APPROACHING src=LIVE visible=1 cx=182 cy=27 ex=22 ey=-93 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:34 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:34 cmd=F state=APPROACHING src=LIVE visible=1 cx=183 cy=28 ex=23 ey=-92 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:34 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:35 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:36 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:54:36 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:36 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=136 cy=56 ex=-24 ey=-64 mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:36 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:37 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:54:42 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=77 cy=43 ex=-83 ey=-77 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:54:42 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-83 lock=0 last=L blocked=0
+2026-06-21 23:54:42 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-83 lock=0 last=L blocked=0
+2026-06-21 23:54:42 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=188 cy=29 ex=28 ey=-91 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:54:42 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=28 lock=0 last=S blocked=0
+2026-06-21 23:54:42 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=188 cy=29 ex=28 ey=-91 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:54:42 cmd=F state=APPROACHING src=LIVE visible=1 cx=188 cy=29 ex=28 ey=-91 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:42 cmd=F state=APPROACHING src=LIVE visible=1 cx=188 cy=30 ex=28 ey=-90 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:42 cmd=F state=APPROACHING src=LIVE visible=1 cx=188 cy=29 ex=28 ey=-91 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:42 cmd=F state=APPROACHING src=LIVE visible=1 cx=188 cy=30 ex=28 ey=-90 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:42 cmd=F state=APPROACHING src=LIVE visible=1 cx=188 cy=29 ex=28 ey=-91 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:42 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:42 cmd=F state=APPROACHING src=LIVE visible=1 cx=188 cy=30 ex=28 ey=-90 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:42 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:42 cmd=F state=APPROACHING src=LIVE visible=1 cx=190 cy=29 ex=30 ey=-91 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:42 cmd=F state=APPROACHING src=LIVE visible=1 cx=192 cy=29 ex=32 ey=-91 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:43 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:43 cmd=F state=APPROACHING src=LIVE visible=1 cx=195 cy=30 ex=35 ey=-90 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:43 cmd=F state=APPROACHING src=LIVE visible=1 cx=197 cy=30 ex=37 ey=-90 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:43 cmd=F state=APPROACHING src=LIVE visible=1 cx=200 cy=29 ex=40 ey=-91 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:43 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:43 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:43 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=208 cy=28 ex=48 ey=-92 mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:43 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=209 cy=26 ex=49 ey=-94 mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:43 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:43 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=231 cy=130 ex=71 ey=10 mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:43 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:43 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=232 cy=135 ex=72 ey=15 mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:43 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:44 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=257 cy=165 ex=97 ey=45 mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:44 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:44 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=273 cy=177 ex=113 ey=57 mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:44 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=274 cy=170 ex=114 ey=50 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:44 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=284 cy=172 ex=124 ey=52 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:44 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=285 cy=171 ex=125 ey=51 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:44 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=286 cy=170 ex=126 ey=50 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:44 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=285 cy=168 ex=125 ey=48 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:44 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=125 lock=0 last=R blocked=0
+2026-06-21 23:54:44 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=125 lock=0 last=R blocked=0
+2026-06-21 23:54:44 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:54:46 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=138 cy=57 ex=-22 ey=-63 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:54:46 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-22 lock=0 last=S blocked=0
+2026-06-21 23:54:47 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=16 cy=56 ex=-144 ey=-64 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:54:47 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-144 lock=0 last=L blocked=0
+2026-06-21 23:54:47 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-144 lock=0 last=L blocked=0
+2026-06-21 23:54:47 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:54:48 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=141 cy=40 ex=-19 ey=-80 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:54:48 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-19 lock=0 last=S blocked=0
+2026-06-21 23:54:48 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:49 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:54:49 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:50 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=150 cy=69 ex=-10 ey=-51 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:54:50 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=150 cy=68 ex=-10 ey=-52 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:54:50 cmd=F state=APPROACHING src=LIVE visible=1 cx=150 cy=67 ex=-10 ey=-53 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:50 cmd=F state=APPROACHING src=LIVE visible=1 cx=150 cy=65 ex=-10 ey=-55 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:50 cmd=F state=APPROACHING src=LIVE visible=1 cx=158 cy=64 ex=-2 ey=-56 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:50 cmd=F state=APPROACHING src=LIVE visible=1 cx=164 cy=67 ex=4 ey=-53 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:50 cmd=F state=APPROACHING src=LIVE visible=1 cx=171 cy=64 ex=11 ey=-56 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:50 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=28 cy=58 ex=-132 ey=-62 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:54:50 cmd=F state=APPROACHING src=LIVE visible=1 cx=177 cy=64 ex=17 ey=-56 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:50 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:50 cmd=F state=APPROACHING src=LIVE visible=1 cx=192 cy=32 ex=32 ey=-88 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:50 cmd=F state=APPROACHING src=LIVE visible=1 cx=197 cy=61 ex=37 ey=-59 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:50 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:50 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=262 cy=66 ex=102 ey=-54 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:50 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=266 cy=68 ex=106 ey=-52 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:50 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=275 cy=61 ex=115 ey=-59 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:51 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=275 cy=62 ex=115 ey=-58 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:51 cmd=S state=TRACK PAUSE R src=LIVE visible=1 cx=275 cy=67 ex=115 ey=-53 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:54:51 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=115 lock=0 last=S blocked=0
+2026-06-21 23:54:51 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=291 cy=59 ex=131 ey=-61 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:51 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=292 cy=75 ex=132 ey=-45 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:51 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=298 cy=61 ex=138 ey=-59 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:54:51 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=138 lock=0 last=R blocked=0
+2026-06-21 23:54:51 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=138 lock=0 last=R blocked=0
+2026-06-21 23:54:51 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:54:55 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:54:57 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:54:58 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=59 cy=62 ex=-101 ey=-58 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:54:58 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=60 cy=63 ex=-100 ey=-57 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:54:58 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=59 cy=63 ex=-101 ey=-57 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:54:58 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-101 lock=0 last=L blocked=0
+2026-06-21 23:54:58 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-101 lock=0 last=L blocked=0
+2026-06-21 23:54:59 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=178 cy=60 ex=18 ey=-60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:54:59 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=178 cy=60 ex=18 ey=-60 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=178 cy=60 ex=18 ey=-60 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=178 cy=59 ex=18 ey=-61 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=178 cy=59 ex=18 ey=-61 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=183 cy=59 ex=23 ey=-61 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=181 cy=60 ex=21 ey=-60 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=184 cy=61 ex=24 ey=-59 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=188 cy=61 ex=28 ey=-59 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=191 cy=63 ex=31 ey=-57 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=193 cy=65 ex=33 ey=-55 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=201 cy=69 ex=41 ey=-51 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=212 cy=69 ex=52 ey=-51 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=212 cy=71 ex=52 ey=-49 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:54:59 cmd=F state=APPROACHING src=LIVE visible=1 cx=214 cy=71 ex=54 ey=-49 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:00 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=218 cy=71 ex=58 ey=-49 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:55:00 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=58 lock=0 last=R blocked=0
+2026-06-21 23:55:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=58 lock=0 last=R blocked=0
+2026-06-21 23:55:00 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=109 cy=84 ex=-51 ey=-36 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:00 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=104 cy=85 ex=-56 ey=-35 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:00 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=102 cy=85 ex=-58 ey=-35 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:55:00 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=101 cy=84 ex=-59 ey=-36 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:55:00 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-59 lock=0 last=L blocked=0
+2026-06-21 23:55:00 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=101 cy=84 ex=-59 ey=-36 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:55:00 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-59 lock=0 last=L blocked=0
+2026-06-21 23:55:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-59 lock=0 last=L blocked=0
+2026-06-21 23:55:00 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=117 cy=84 ex=-43 ey=-36 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-43 lock=0 last=S blocked=0
+2026-06-21 23:55:00 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=146 cy=82 ex=-14 ey=-38 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:00 cmd=F state=APPROACHING src=LIVE visible=1 cx=154 cy=81 ex=-6 ey=-39 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=150 cy=83 ex=-10 ey=-37 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=146 cy=83 ex=-14 ey=-37 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:00 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=151 cy=83 ex=-9 ey=-37 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=154 cy=84 ex=-6 ey=-36 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:01 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=170 cy=89 ex=10 ey=-31 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:01 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=188 cy=96 ex=28 ey=-24 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=188 cy=97 ex=28 ey=-23 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:01 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=208 cy=107 ex=48 ey=-13 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:01 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:01 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:55:07 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:55:07 cmd=S state=REVERSAL WAIT 1/3 src=LIVE visible=1 cx=279 cy=120 ex=119 ey=0 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:07 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=119 lock=0 last=S blocked=0
+2026-06-21 23:55:07 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=277 cy=120 ex=117 ey=0 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:55:07 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=117 lock=0 last=R blocked=0
+2026-06-21 23:55:07 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=275 cy=120 ex=115 ey=0 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:55:07 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=115 lock=0 last=R blocked=0
+2026-06-21 23:55:07 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=115 lock=0 last=R blocked=0
+2026-06-21 23:55:07 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:55:08 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:55:18 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:55:20 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:55:21 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=170 cy=56 ex=10 ey=-64 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:21 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=170 cy=57 ex=10 ey=-63 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=169 cy=57 ex=9 ey=-63 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=168 cy=57 ex=8 ey=-63 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=169 cy=57 ex=9 ey=-63 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=168 cy=58 ex=8 ey=-62 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=177 cy=58 ex=17 ey=-62 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=184 cy=59 ex=24 ey=-61 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=193 cy=58 ex=33 ey=-62 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=195 cy=59 ex=35 ey=-61 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=200 cy=59 ex=40 ey=-61 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=201 cy=59 ex=41 ey=-61 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=208 cy=61 ex=48 ey=-59 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACHING src=LIVE visible=1 cx=209 cy=62 ex=49 ey=-58 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:21 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:22 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=227 cy=68 ex=67 ey=-52 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:55:22 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=67 lock=0 last=R blocked=0
+2026-06-21 23:55:22 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=67 lock=0 last=R blocked=0
+2026-06-21 23:55:22 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=143 cy=81 ex=-17 ey=-39 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:22 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-17 lock=0 last=S blocked=0
+2026-06-21 23:55:23 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:55:23 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=145 cy=81 ex=-15 ey=-39 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:23 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-15 lock=0 last=S blocked=0
+2026-06-21 23:55:23 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=160 cy=81 ex=0 ey=-39 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:23 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=0 lock=0 last=S blocked=0
+2026-06-21 23:55:23 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=191 cy=80 ex=31 ey=-40 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:23 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=31 lock=0 last=S blocked=0
+2026-06-21 23:55:24 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:55:32 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=104 cy=40 ex=-56 ey=-80 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:32 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=104 cy=41 ex=-56 ey=-79 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:32 cmd=F state=APPROACHING src=LIVE visible=1 cx=104 cy=40 ex=-56 ey=-80 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:32 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:32 cmd=F state=APPROACHING src=LIVE visible=1 cx=104 cy=42 ex=-56 ey=-78 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:32 cmd=F state=APPROACHING src=LIVE visible=1 cx=104 cy=41 ex=-56 ey=-79 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:32 cmd=F state=APPROACHING src=LIVE visible=1 cx=103 cy=42 ex=-57 ey=-78 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:33 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:33 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=263 cy=44 ex=103 ey=-76 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:55:33 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=103 lock=0 last=R blocked=0
+2026-06-21 23:55:33 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:55:37 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:55:38 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=186 cy=71 ex=26 ey=-49 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:38 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=187 cy=70 ex=27 ey=-50 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACHING src=LIVE visible=1 cx=186 cy=70 ex=26 ey=-50 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACHING src=LIVE visible=1 cx=187 cy=71 ex=27 ey=-49 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACHING src=LIVE visible=1 cx=189 cy=72 ex=29 ey=-48 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACHING src=LIVE visible=1 cx=195 cy=73 ex=35 ey=-47 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACHING src=LIVE visible=1 cx=197 cy=74 ex=37 ey=-46 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACHING src=LIVE visible=1 cx=199 cy=74 ex=39 ey=-46 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACHING src=LIVE visible=1 cx=200 cy=75 ex=40 ey=-45 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACHING src=LIVE visible=1 cx=204 cy=76 ex=44 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACHING src=LIVE visible=1 cx=208 cy=76 ex=48 ey=-44 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACHING src=LIVE visible=1 cx=211 cy=77 ex=51 ey=-43 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=F state=APPROACHING src=LIVE visible=1 cx=216 cy=78 ex=56 ey=-42 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:38 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=218 cy=79 ex=58 ey=-41 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:55:38 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=222 cy=79 ex=62 ey=-41 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:55:38 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=228 cy=82 ex=68 ey=-38 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:55:38 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=233 cy=83 ex=73 ey=-37 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:55:38 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=73 lock=0 last=R blocked=0
+2026-06-21 23:55:38 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=235 cy=85 ex=75 ey=-35 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:55:39 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=219 cy=88 ex=59 ey=-32 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:55:39 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=59 lock=0 last=R blocked=0
+2026-06-21 23:55:39 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=59 lock=0 last=R blocked=0
+2026-06-21 23:55:39 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:55:48 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=85 cy=96 ex=-75 ey=-24 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:55:48 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-75 lock=0 last=L blocked=0
+2026-06-21 23:55:48 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-75 lock=0 last=L blocked=0
+2026-06-21 23:55:49 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=96 cy=95 ex=-64 ey=-25 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:55:49 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-64 lock=0 last=L blocked=0
+2026-06-21 23:55:49 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-64 lock=0 last=L blocked=0
+2026-06-21 23:55:49 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=95 cy=96 ex=-65 ey=-24 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:55:49 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-65 lock=0 last=L blocked=0
+2026-06-21 23:55:49 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=111 cy=95 ex=-49 ey=-25 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:49 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=117 cy=94 ex=-43 ey=-26 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:55:49 cmd=F state=ADVANCING src=LIVE visible=1 cx=122 cy=94 ex=-38 ey=-26 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=ADVANCING src=LIVE visible=1 cx=121 cy=94 ex=-39 ey=-26 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=ADVANCING src=LIVE visible=1 cx=123 cy=96 ex=-37 ey=-24 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=ADVANCING src=LIVE visible=1 cx=124 cy=96 ex=-36 ey=-24 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=ADVANCING src=LIVE visible=1 cx=126 cy=96 ex=-34 ey=-24 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=ADVANCING src=LIVE visible=1 cx=126 cy=97 ex=-34 ey=-23 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=ADVANCING src=LIVE visible=1 cx=126 cy=97 ex=-34 ey=-23 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=ADVANCING src=LIVE visible=1 cx=127 cy=99 ex=-33 ey=-21 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:49 cmd=F state=ADVANCING src=LIVE visible=1 cx=139 cy=115 ex=-21 ey=-5 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:55:50 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:55:51 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=145 cy=119 ex=-15 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:55:52 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:55:52 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=139 cy=120 ex=-21 ey=0 mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:55:52 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:55:52 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=16 cy=50 ex=-144 ey=-70 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:55:52 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-144 lock=0 last=L blocked=0
+2026-06-21 23:55:52 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-144 lock=0 last=L blocked=0
+2026-06-21 23:55:53 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:55:53 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=77 cy=81 ex=-83 ey=-39 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:55:53 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-83 lock=0 last=L blocked=0
+2026-06-21 23:55:53 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-83 lock=0 last=L blocked=0
+2026-06-21 23:55:53 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:56:00 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=198 cy=33 ex=38 ey=-87 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:56:00 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=198 cy=33 ex=38 ey=-87 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:56:00 cmd=F state=APPROACHING src=LIVE visible=1 cx=198 cy=32 ex=38 ey=-88 mex=-- lock=1 last=F blocked=0
+2026-06-21 23:56:00 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-21 23:56:00 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=226 cy=32 ex=66 ey=-88 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:56:00 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=66 lock=0 last=R blocked=0
+2026-06-21 23:56:01 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=230 cy=33 ex=70 ey=-87 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:56:01 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=70 lock=0 last=R blocked=0
+2026-06-21 23:56:01 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=233 cy=33 ex=73 ey=-87 mex=-- lock=0 last=R blocked=0
+2026-06-21 23:56:01 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=73 lock=0 last=R blocked=0
+2026-06-21 23:56:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=73 lock=0 last=R blocked=0
+2026-06-21 23:56:01 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=31 cy=49 ex=-129 ey=-71 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:56:01 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-129 lock=0 last=L blocked=0
+2026-06-21 23:56:01 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=32 cy=51 ex=-128 ey=-69 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:56:01 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=32 cy=49 ex=-128 ey=-71 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:56:01 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=32 cy=48 ex=-128 ey=-72 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:56:01 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-128 lock=0 last=L blocked=0
+2026-06-21 23:56:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-128 lock=0 last=L blocked=0
+2026-06-21 23:56:02 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=88 cy=42 ex=-72 ey=-78 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:56:02 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=89 cy=43 ex=-71 ey=-77 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:56:02 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=89 cy=44 ex=-71 ey=-76 mex=-- lock=0 last=L blocked=0
+2026-06-21 23:56:02 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=89 cy=44 ex=-71 ey=-76 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:56:02 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-71 lock=0 last=S blocked=0
+2026-06-21 23:56:02 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-71 lock=0 last=S blocked=0
+2026-06-21 23:56:02 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:56:03 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-21 23:56:03 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=157 cy=38 ex=-3 ey=-82 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:56:03 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-3 lock=0 last=S blocked=0
+2026-06-21 23:56:03 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=155 cy=37 ex=-5 ey=-83 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:56:03 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-5 lock=0 last=S blocked=0
+2026-06-21 23:56:03 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:56:04 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=155 cy=41 ex=-5 ey=-79 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:56:04 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-5 lock=0 last=S blocked=0
+2026-06-21 23:56:04 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-21 23:56:05 cmd=S state=REVERSAL WAIT 1/3 src=LIVE visible=1 cx=311 cy=37 ex=151 ey=-83 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:56:05 cmd=S state=REVERSAL WAIT 2/3 src=LIVE visible=1 cx=311 cy=35 ex=151 ey=-85 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:56:05 cmd=S state=REVERSAL WAIT 3/3 src=LIVE visible=1 cx=311 cy=38 ex=151 ey=-82 mex=-- lock=0 last=S blocked=0
+2026-06-21 23:56:05 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=151 lock=0 last=S blocked=0
+2026-06-21 23:56:05 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=151 lock=0 last=S blocked=0
+2026-06-21 23:56:06 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:03:06 detect.py started
+2026-06-22 01:03:07 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:03:11 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:12 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:03:14 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=43 cy=59 ex=-117 ey=-61 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:14 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-117 lock=0 last=L blocked=0
+2026-06-22 01:03:14 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=39 cy=59 ex=-121 ey=-61 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:14 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-121 lock=0 last=L blocked=0
+2026-06-22 01:03:14 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-121 lock=0 last=L blocked=0
+2026-06-22 01:03:14 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=125 cy=51 ex=-35 ey=-69 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:14 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=125 cy=51 ex=-35 ey=-69 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:14 cmd=F state=APPROACHING src=LIVE visible=1 cx=124 cy=51 ex=-36 ey=-69 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:14 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:14 cmd=F state=APPROACHING src=LIVE visible=1 cx=124 cy=52 ex=-36 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:14 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:15 cmd=F state=APPROACHING src=LIVE visible=1 cx=127 cy=58 ex=-33 ey=-62 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:15 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:15 cmd=F state=APPROACHING src=LIVE visible=1 cx=123 cy=71 ex=-37 ey=-49 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:15 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:15 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:18 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=138 cy=119 ex=-22 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:18 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:19 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=134 cy=119 ex=-26 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:19 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:19 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=138 cy=119 ex=-22 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:20 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:22 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=156 cy=119 ex=-4 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:22 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=155 cy=119 ex=-5 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:22 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:22 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=149 cy=119 ex=-11 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:22 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:22 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=142 cy=119 ex=-18 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:22 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:22 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=90 cy=119 ex=-70 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:22 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:22 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=90 cy=117 ex=-70 ey=-3 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:22 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=90 cy=116 ex=-70 ey=-4 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:22 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:23 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=85 cy=131 ex=-75 ey=11 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:23 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-75 lock=0 last=L blocked=0
+2026-06-22 01:03:23 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=71 cy=114 ex=-89 ey=-6 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:23 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-89 lock=0 last=L blocked=0
+2026-06-22 01:03:23 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-89 lock=0 last=L blocked=0
+2026-06-22 01:03:23 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:03:23 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=77 cy=81 ex=-83 ey=-39 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:23 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=76 cy=83 ex=-84 ey=-37 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:23 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=78 cy=80 ex=-82 ey=-40 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:23 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-82 lock=0 last=L blocked=0
+2026-06-22 01:03:23 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-82 lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=80 cy=73 ex=-80 ey=-47 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-80 lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=86 cy=68 ex=-74 ey=-52 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-74 lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-74 lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=93 cy=56 ex=-67 ey=-64 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=94 cy=56 ex=-66 ey=-64 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=95 cy=56 ex=-65 ey=-64 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=96 cy=56 ex=-64 ey=-64 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=96 cy=56 ex=-64 ey=-64 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:24 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=98 cy=57 ex=-62 ey=-63 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:24 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=101 cy=56 ex=-59 ey=-64 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:24 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=99 cy=56 ex=-61 ey=-64 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:24 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=99 cy=56 ex=-61 ey=-64 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=98 cy=56 ex=-62 ey=-64 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:24 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=99 cy=56 ex=-61 ey=-64 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:24 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-61 lock=0 last=S blocked=0
+2026-06-22 01:03:24 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-61 lock=0 last=S blocked=0
+2026-06-22 01:03:24 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=161 cy=51 ex=1 ey=-69 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:24 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=159 cy=51 ex=-1 ey=-69 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:24 cmd=F state=APPROACHING src=LIVE visible=1 cx=157 cy=51 ex=-3 ey=-69 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:24 cmd=F state=APPROACHING src=LIVE visible=1 cx=155 cy=52 ex=-5 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=154 cy=52 ex=-6 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=153 cy=52 ex=-7 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=154 cy=52 ex=-6 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=156 cy=52 ex=-4 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=158 cy=52 ex=-2 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=164 cy=52 ex=4 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=165 cy=52 ex=5 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=168 cy=54 ex=8 ey=-66 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=169 cy=54 ex=9 ey=-66 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=169 cy=55 ex=9 ey=-65 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=170 cy=56 ex=10 ey=-64 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=171 cy=56 ex=11 ey=-64 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=172 cy=56 ex=12 ey=-64 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=191 cy=62 ex=31 ey=-58 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=197 cy=64 ex=37 ey=-56 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=201 cy=66 ex=41 ey=-54 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACHING src=LIVE visible=1 cx=211 cy=69 ex=51 ey=-51 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:25 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:26 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=222 cy=81 ex=62 ey=-39 mex=-- lock=0 last=R blocked=0
+2026-06-22 01:03:26 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=62 lock=0 last=R blocked=0
+2026-06-22 01:03:26 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=229 cy=89 ex=69 ey=-31 mex=-- lock=0 last=R blocked=0
+2026-06-22 01:03:26 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=69 lock=0 last=R blocked=0
+2026-06-22 01:03:26 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=69 lock=0 last=R blocked=0
+2026-06-22 01:03:26 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:26 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=128 cy=119 ex=-32 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:26 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=123 cy=119 ex=-37 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:26 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=120 cy=119 ex=-40 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:26 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:26 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:26 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:26 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=117 cy=119 ex=-43 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:27 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=120 cy=119 ex=-40 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=120 cy=119 ex=-40 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:28 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=121 cy=119 ex=-39 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=121 cy=119 ex=-39 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=120 cy=119 ex=-40 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=120 cy=119 ex=-40 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=121 cy=119 ex=-39 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=120 cy=119 ex=-40 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=120 cy=119 ex=-40 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=118 ex=-42 ey=-2 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:29 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=120 ex=-42 ey=0 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=119 cy=119 ex=-41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=118 cy=119 ex=-42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=117 cy=119 ex=-43 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=117 cy=119 ex=-43 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=116 cy=119 ex=-44 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=117 cy=119 ex=-43 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=115 cy=119 ex=-45 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=116 cy=119 ex=-44 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=114 cy=119 ex=-46 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:30 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:31 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=93 cy=119 ex=-67 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:31 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=90 cy=119 ex=-70 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:31 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:31 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=80 cy=116 ex=-80 ey=-4 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:31 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:31 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=42 cy=104 ex=-118 ey=-16 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:31 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-118 lock=0 last=L blocked=0
+2026-06-22 01:03:31 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-118 lock=0 last=L blocked=0
+2026-06-22 01:03:31 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=49 cy=93 ex=-111 ey=-27 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:31 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-111 lock=0 last=L blocked=0
+2026-06-22 01:03:31 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=56 cy=84 ex=-104 ey=-36 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:31 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-104 lock=0 last=L blocked=0
+2026-06-22 01:03:31 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=67 cy=77 ex=-93 ey=-43 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:03:31 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-93 lock=0 last=L blocked=0
+2026-06-22 01:03:31 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-93 lock=0 last=L blocked=0
+2026-06-22 01:03:32 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:03:35 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:36 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=151 cy=76 ex=-9 ey=-44 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:36 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=150 cy=76 ex=-10 ey=-44 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:36 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:37 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:03:40 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=147 cy=51 ex=-13 ey=-69 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:40 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=151 cy=51 ex=-9 ey=-69 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:40 cmd=F state=APPROACHING src=LIVE visible=1 cx=152 cy=51 ex=-8 ey=-69 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=153 cy=51 ex=-7 ey=-69 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=152 cy=51 ex=-8 ey=-69 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=153 cy=52 ex=-7 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=154 cy=51 ex=-6 ey=-69 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=155 cy=51 ex=-5 ey=-69 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=157 cy=51 ex=-3 ey=-69 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=158 cy=51 ex=-2 ey=-69 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=162 cy=51 ex=2 ey=-69 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=163 cy=52 ex=3 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=165 cy=51 ex=5 ey=-69 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=167 cy=52 ex=7 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=168 cy=52 ex=8 ey=-68 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=171 cy=53 ex=11 ey=-67 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=171 cy=54 ex=11 ey=-66 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=171 cy=55 ex=11 ey=-65 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=170 cy=56 ex=10 ey=-64 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=170 cy=57 ex=10 ey=-63 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=170 cy=58 ex=10 ey=-62 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=169 cy=58 ex=9 ey=-62 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=172 cy=60 ex=12 ey=-60 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=170 cy=60 ex=10 ey=-60 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=171 cy=62 ex=11 ey=-58 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=172 cy=63 ex=12 ey=-57 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=171 cy=65 ex=11 ey=-55 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACHING src=LIVE visible=1 cx=172 cy=69 ex=12 ey=-51 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:41 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:42 cmd=F state=APPROACHING src=LIVE visible=1 cx=173 cy=79 ex=13 ey=-41 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:42 cmd=F state=APPROACHING src=LIVE visible=1 cx=175 cy=80 ex=15 ey=-40 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:42 cmd=F state=ADVANCING src=LIVE visible=1 cx=176 cy=82 ex=16 ey=-38 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:42 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:42 cmd=F state=ADVANCING src=LIVE visible=1 cx=182 cy=95 ex=22 ey=-25 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:42 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:03:42 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:42 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=194 cy=114 ex=34 ey=-6 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:42 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:42 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=197 cy=119 ex=37 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:42 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:42 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=203 cy=119 ex=43 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:42 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:43 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=201 cy=119 ex=41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:43 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:43 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=202 cy=119 ex=42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:43 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:43 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=202 cy=119 ex=42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:43 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:43 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=200 cy=119 ex=40 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:43 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:44 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=202 cy=119 ex=42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:44 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=201 cy=119 ex=41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:44 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:44 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=201 cy=119 ex=41 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:44 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:44 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=202 cy=119 ex=42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:44 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:44 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=202 cy=119 ex=42 ey=-1 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:44 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:52 cmd=S state=REVERSAL WAIT 1/3 src=LIVE visible=1 cx=284 cy=116 ex=124 ey=-4 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:52 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=124 lock=0 last=S blocked=0
+2026-06-22 01:03:52 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=124 lock=0 last=S blocked=0
+2026-06-22 01:03:52 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=291 cy=115 ex=131 ey=-5 mex=-- lock=0 last=R blocked=0
+2026-06-22 01:03:52 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=131 lock=0 last=R blocked=0
+2026-06-22 01:03:52 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=131 lock=0 last=R blocked=0
+2026-06-22 01:03:52 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:03:54 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:57 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:03:59 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=144 cy=50 ex=-16 ey=-70 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:03:59 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-16 lock=0 last=S blocked=0
+2026-06-22 01:03:59 cmd=S state=ARDUINO DISTANCE STOP src=LIVE visible=1 cx=155 cy=44 ex=-5 ey=-76 mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:03:59 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:04:03 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:04:09 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:04:20 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:04:20 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:04:23 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:04:23 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:04:24 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:04:36 cmd=S state=REVERSAL WAIT 1/3 src=LIVE visible=1 cx=263 cy=25 ex=103 ey=-95 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:04:36 cmd=S state=REVERSAL WAIT 2/3 src=LIVE visible=1 cx=262 cy=24 ex=102 ey=-96 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:04:36 cmd=S state=REVERSAL WAIT 3/3 src=LIVE visible=1 cx=262 cy=25 ex=102 ey=-95 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:04:36 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=102 lock=0 last=S blocked=0
+2026-06-22 01:04:36 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=262 cy=26 ex=102 ey=-94 mex=-- lock=0 last=R blocked=0
+2026-06-22 01:04:36 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=102 lock=0 last=R blocked=0
+2026-06-22 01:04:36 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=102 lock=0 last=R blocked=0
+2026-06-22 01:04:36 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=90 cy=30 ex=-70 ey=-90 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:04:36 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-70 lock=0 last=L blocked=0
+2026-06-22 01:04:36 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-70 lock=0 last=L blocked=0
+2026-06-22 01:04:36 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=60 cy=30 ex=-100 ey=-90 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:04:36 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=58 cy=31 ex=-102 ey=-89 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:04:36 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=58 cy=30 ex=-102 ey=-90 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:04:36 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=59 cy=31 ex=-101 ey=-89 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:04:36 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-101 lock=0 last=L blocked=0
+2026-06-22 01:04:36 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-101 lock=0 last=L blocked=0
+2026-06-22 01:04:37 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:04:38 cmd=S state=REVERSAL WAIT 1/3 src=LIVE visible=1 cx=298 cy=52 ex=138 ey=-68 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:04:38 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=138 lock=0 last=S blocked=0
+2026-06-22 01:04:38 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=297 cy=52 ex=137 ey=-68 mex=-- lock=0 last=R blocked=0
+2026-06-22 01:04:38 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=137 lock=0 last=R blocked=0
+2026-06-22 01:04:38 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=137 lock=0 last=R blocked=0
+2026-06-22 01:04:39 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:06:07 detect.py started
+2026-06-22 01:06:08 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:06:13 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=216 cy=105 ex=56 ey=-15 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:06:13 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=56 lock=0 last=S blocked=0
+2026-06-22 01:06:14 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:06:16 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=54 cy=124 ex=-106 ey=4 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:16 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-106 lock=0 last=L blocked=0
+2026-06-22 01:06:16 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=73 cy=122 ex=-87 ey=2 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:16 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=73 cy=123 ex=-87 ey=3 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:16 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-87 lock=0 last=L blocked=0
+2026-06-22 01:06:16 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=70 cy=124 ex=-90 ey=4 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:16 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=71 cy=124 ex=-89 ey=4 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:16 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-89 lock=0 last=L blocked=0
+2026-06-22 01:06:16 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=87 cy=121 ex=-73 ey=1 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:16 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-73 lock=0 last=L blocked=0
+2026-06-22 01:06:16 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-73 lock=0 last=L blocked=0
+2026-06-22 01:06:16 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=216 cy=111 ex=56 ey=-9 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:06:16 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=216 cy=112 ex=56 ey=-8 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:06:16 cmd=F state=ADVANCING src=LIVE visible=1 cx=216 cy=112 ex=56 ey=-8 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:16 cmd=F state=ADVANCING src=LIVE visible=1 cx=215 cy=112 ex=55 ey=-8 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:16 cmd=F state=ADVANCING src=LIVE visible=1 cx=215 cy=114 ex=55 ey=-6 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:16 cmd=F state=ADVANCING src=LIVE visible=1 cx=216 cy=112 ex=56 ey=-8 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:16 cmd=F state=ADVANCING src=LIVE visible=1 cx=217 cy=113 ex=57 ey=-7 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:16 cmd=F state=ADVANCING src=LIVE visible=1 cx=217 cy=112 ex=57 ey=-8 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:16 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=224 cy=112 ex=64 ey=-8 mex=-- lock=0 last=R blocked=0
+2026-06-22 01:06:17 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=64 lock=0 last=R blocked=0
+2026-06-22 01:06:17 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=231 cy=112 ex=71 ey=-8 mex=-- lock=0 last=R blocked=0
+2026-06-22 01:06:17 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=71 lock=0 last=R blocked=0
+2026-06-22 01:06:17 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=71 lock=0 last=R blocked=0
+2026-06-22 01:06:17 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=165 cy=118 ex=5 ey=-2 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:06:17 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=156 cy=118 ex=-4 ey=-2 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=152 cy=119 ex=-8 ey=-1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=149 cy=118 ex=-11 ey=-2 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=148 cy=119 ex=-12 ey=-1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=147 cy=119 ex=-13 ey=-1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=148 cy=121 ex=-12 ey=1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=142 cy=121 ex=-18 ey=1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=144 cy=119 ex=-16 ey=-1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=147 cy=119 ex=-13 ey=-1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=146 cy=119 ex=-14 ey=-1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=147 cy=120 ex=-13 ey=0 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=145 cy=120 ex=-15 ey=0 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=147 cy=119 ex=-13 ey=-1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=147 cy=120 ex=-13 ey=0 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=148 cy=120 ex=-12 ey=0 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=148 cy=119 ex=-12 ey=-1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=150 cy=123 ex=-10 ey=3 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=ADVANCING src=LIVE visible=1 cx=151 cy=119 ex=-9 ey=-1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:17 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:18 cmd=F state=ADVANCING src=LIVE visible=1 cx=159 cy=120 ex=-1 ey=0 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:18 cmd=F state=ADVANCING src=LIVE visible=1 cx=162 cy=119 ex=2 ey=-1 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:18 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:19 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:06:20 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:06:34 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=43 cy=98 ex=-117 ey=-22 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=44 cy=99 ex=-116 ey=-21 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-116 lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=43 cy=100 ex=-117 ey=-20 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=42 cy=100 ex=-118 ey=-20 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=44 cy=100 ex=-116 ey=-20 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=43 cy=100 ex=-117 ey=-20 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=42 cy=100 ex=-118 ey=-20 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-118 lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=42 cy=99 ex=-118 ey=-21 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-118 lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-118 lock=0 last=L blocked=0
+2026-06-22 01:06:34 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=180 cy=89 ex=20 ey=-31 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:06:34 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=180 cy=88 ex=20 ey=-32 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:06:34 cmd=F state=ADVANCING src=LIVE visible=1 cx=180 cy=91 ex=20 ey=-29 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:34 cmd=F state=ADVANCING src=LIVE visible=1 cx=180 cy=90 ex=20 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=180 cy=91 ex=20 ey=-29 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=180 cy=90 ex=20 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=180 cy=91 ex=20 ey=-29 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=180 cy=90 ex=20 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=180 cy=92 ex=20 ey=-28 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=179 cy=92 ex=19 ey=-28 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=184 cy=90 ex=24 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=183 cy=91 ex=23 ey=-29 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=185 cy=91 ex=25 ey=-29 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=24 cy=112 ex=-136 ey=-8 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=188 cy=91 ex=28 ey=-29 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=189 cy=91 ex=29 ey=-29 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=191 cy=90 ex=31 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=192 cy=90 ex=32 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=193 cy=89 ex=33 ey=-31 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=194 cy=89 ex=34 ey=-31 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=195 cy=90 ex=35 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=26 cy=114 ex=-134 ey=-6 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=197 cy=89 ex=37 ey=-31 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=199 cy=90 ex=39 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=199 cy=91 ex=39 ey=-29 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=200 cy=90 ex=40 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=ADVANCING src=LIVE visible=1 cx=201 cy=90 ex=41 ey=-30 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:35 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:36 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:06:40 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:06:40 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:06:41 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:06:42 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:06:47 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:06:50 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:06:51 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0
+2026-06-22 01:06:52 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=31 cy=104 ex=-129 ey=-16 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:52 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=29 cy=103 ex=-131 ey=-17 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:52 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=30 cy=104 ex=-130 ey=-16 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:52 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=30 cy=105 ex=-130 ey=-15 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:52 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=28 cy=105 ex=-132 ey=-15 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:52 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=29 cy=105 ex=-131 ey=-15 mex=-- lock=0 last=L blocked=0
+2026-06-22 01:06:52 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-131 lock=0 last=L blocked=0
+2026-06-22 01:06:52 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-131 lock=0 last=L blocked=0
+2026-06-22 01:06:52 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=120 cy=95 ex=-40 ey=-25 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:06:52 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-40 lock=0 last=S blocked=0
+2026-06-22 01:06:52 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=116 cy=97 ex=-44 ey=-23 mex=-- lock=0 last=S blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=117 cy=96 ex=-43 ey=-24 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=115 cy=96 ex=-45 ey=-24 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=117 cy=97 ex=-43 ey=-23 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=116 cy=97 ex=-44 ey=-23 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=117 cy=97 ex=-43 ey=-23 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=113 cy=99 ex=-47 ey=-21 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=118 cy=96 ex=-42 ey=-24 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=121 cy=95 ex=-39 ey=-25 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=122 cy=95 ex=-38 ey=-25 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=123 cy=96 ex=-37 ey=-24 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=127 cy=95 ex=-33 ey=-25 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=130 cy=93 ex=-30 ey=-27 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=132 cy=94 ex=-28 ey=-26 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=137 cy=93 ex=-23 ey=-27 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=139 cy=96 ex=-21 ey=-24 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=149 cy=93 ex=-11 ey=-27 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=151 cy=92 ex=-9 ey=-28 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:52 cmd=F state=ADVANCING src=LIVE visible=1 cx=154 cy=93 ex=-6 ey=-27 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=158 cy=93 ex=-2 ey=-27 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=159 cy=93 ex=-1 ey=-27 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=162 cy=92 ex=2 ey=-28 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=170 cy=92 ex=10 ey=-28 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=172 cy=92 ex=12 ey=-28 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=175 cy=91 ex=15 ey=-29 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=180 cy=92 ex=20 ey=-28 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=191 cy=98 ex=31 ey=-22 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=194 cy=102 ex=34 ey=-18 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=206 cy=100 ex=46 ey=-20 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=212 cy=102 ex=52 ey=-18 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=ADVANCING src=LIVE visible=1 cx=216 cy=106 ex=56 ey=-14 mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:53 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0
+2026-06-22 01:06:54 cmd=S state=ARDUINO DISTANCE STOP src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1
+2026-06-22 01:06:56 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0

@@ -169,26 +169,26 @@ void rotateLeft(int speed) {
   analogWrite(enA, speed);
   analogWrite(enB, speed);
 
-  // Sol motor geri
-  digitalWrite(in1, LOW);
-  digitalWrite(in2, HIGH);
+  // Fiziksel yonler ters oldugu icin burada sol donusu mantiksal olarak duzeltiyoruz.
+  // Sol donus icin sol motor ileri, sag motor geri suruluyor.
+  digitalWrite(in1, HIGH);
+  digitalWrite(in2, LOW);
 
-  // Sağ motor ileri
-  digitalWrite(in3, HIGH);
-  digitalWrite(in4, LOW);
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
 }
 
 void rotateRight(int speed) {
   analogWrite(enA, speed);
   analogWrite(enB, speed);
 
-  // Sol motor ileri
-  digitalWrite(in1, HIGH);
-  digitalWrite(in2, LOW);
+  // Fiziksel yonler ters oldugu icin burada sag donusu mantiksal olarak duzeltiyoruz.
+  // Sag donus icin sol motor geri, sag motor ileri suruluyor.
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
 
-  // Sağ motor geri
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, HIGH);
+  digitalWrite(in3, HIGH);
+  digitalWrite(in4, LOW);
 }
 
 void stopMotors() {

@@ -32,6 +32,9 @@ MODEL_PATH = os.environ.get("YOLO_MODEL", "yolo11n.pt")
 TARGET_CLASS = os.environ.get("YOLO_TARGET_CLASS", "bottle")
 CONFIDENCE = float(os.environ.get("YOLO_CONFIDENCE", "0.45"))
 WEB_CONTROL_URL = os.environ.get("YOLO_WEB_URL", "http://127.0.0.1:8001")
+DEBUG_LOG_PATH = Path(
+    os.environ.get("YOLO_DEBUG_LOG", str(PROJECT_ROOT / "yolo" / "detect_debug.log"))
+)
 
 SEND_INTERVAL = 0.1
 SEARCH_TURN_SECONDS = float(os.environ.get("YOLO_SEARCH_TURN_SECONDS", "0.35"))
@@ -137,6 +140,12 @@ def draw_box(frame, box, label, color):
     )
 
 
+def append_debug_log(message):
+    timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+    with DEBUG_LOG_PATH.open("a", encoding="utf-8") as log_file:
+        log_file.write(f"{timestamp} {message}\n")
+
+
 model = load_model()
 sock = connect_to_esp()
 cap = cv2.VideoCapture(STREAM_URL)
@@ -172,8 +181,10 @@ fps = 0.0
 target_class_id = None
 active_target_class = TARGET_CLASS
 active_confidence = CONFIDENCE
+last_logged_signature = None
 
 print(f"YOLO hedef sinifi: {TARGET_CLASS}")
+append_debug_log("detect.py started")
 
 try:
     while True:
@@ -267,8 +278,12 @@ try:
         candidate_area = 0.0
         target_center_x = None
         target_center_y = None
+        center_error_x = None
+        center_error_y = None
+        memory_error_x = None
         confidence_score = 0.0
         best_box = None
+        decision_source = "SEARCH"
 
         best_candidate = None
         for xyxy, confidence, class_id in zip(
@@ -308,6 +323,7 @@ try:
 
         now_monotonic = time.monotonic()
         if target_visible:
+            decision_source = "LIVE"
             last_target_seen_at = now_monotonic
             reacquire_nudge_direction = None
             reacquire_nudge_until = 0.0
@@ -460,10 +476,10 @@ try:
                 )
 
                 if recently_saw_target:
+                    decision_source = "MEMORY"
                     search_phase = None
                     search_phase_started = None
                     center_tolerance_x = int(frame_width * CENTER_TOLERANCE_X_RATIO)
-                    memory_error_x = None
                     if last_target_center is not None:
                         memory_error_x = last_target_center[0] - frame_center_x
 
@@ -491,6 +507,7 @@ try:
                         detection_state = "REACQUIRE HOLD"
                         command = "S"
                 else:
+                    decision_source = "SEARCH"
                     start_search_with_pause = last_target_command in ("L", "R", "S")
                     last_target_box = None
                     last_target_center = None
@@ -564,6 +581,56 @@ try:
             last_command = command
             last_send_time = current_time
 
+        log_signature = (
+            command,
+            detection_state,
+            decision_source,
+            target_visible,
+            target_center_x,
+            target_center_y,
+            center_error_x,
+            center_error_y,
+            memory_error_x,
+            approach_locked,
+            last_target_command,
+            arduino_obstacle_blocked,
+        )
+        should_log = (
+            log_signature != last_logged_signature
+            and (
+                command in ("L", "R", "F", "S")
+                or detection_state.startswith("TRACK ")
+                or detection_state.startswith("REACQUIRE ")
+                or detection_state.startswith("REVERSAL WAIT")
+                or detection_state in (
+                    "ADVANCING",
+                    "APPROACHING",
+                    "APPROACH LOCK",
+                    "ARDUINO DISTANCE STOP",
+                )
+            )
+        )
+        if should_log:
+            append_debug_log(
+                " ".join(
+                    [
+                        f"cmd={command}",
+                        f"state={detection_state}",
+                        f"src={decision_source}",
+                        f"visible={int(target_visible)}",
+                        f"cx={target_center_x if target_center_x is not None else '--'}",
+                        f"cy={target_center_y if target_center_y is not None else '--'}",
+                        f"ex={center_error_x if center_error_x is not None else '--'}",
+                        f"ey={center_error_y if center_error_y is not None else '--'}",
+                        f"mex={memory_error_x if memory_error_x is not None else '--'}",
+                        f"lock={int(approach_locked)}",
+                        f"last={last_target_command if last_target_command is not None else '--'}",
+                        f"blocked={int(arduino_obstacle_blocked)}",
+                    ]
+                )
+            )
+            last_logged_signature = log_signature
+
         web_control.update_status(
             command=command,
             target_detected=target_visible,
@@ -595,6 +662,22 @@ try:
             cv2.FONT_HERSHEY_SIMPLEX,
             0.6,
             (0, 255, 255),
+            2,
+        )
+        cv2.putText(
+            frame,
+            (
+                f"SRC: {decision_source} "
+                f"EX: {center_error_x if center_error_x is not None else '--'} "
+                f"EY: {center_error_y if center_error_y is not None else '--'} "
+                f"MEX: {memory_error_x if memory_error_x is not None else '--'} "
+                f"LOCK: {'1' if approach_locked else '0'} "
+                f"LAST: {last_target_command if last_target_command is not None else '--'}"
+            ),
+            (10, 100),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.6,
+            (255, 220, 120),
             2,
         )
 
