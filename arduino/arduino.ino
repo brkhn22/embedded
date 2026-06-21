@@ -17,13 +17,12 @@ const int trigPin = 10;
 const int echoPin = 11;
 
 const int forwardSpeed = 120;
-const int searchTurnSpeed = 150;
-const int trackTurnSpeed = 130;
-const int turnKickSpeed = 180;
-const unsigned long turnKickDurationMs = 150;
+const int searchTurnSpeed = 110;
+const int trackTurnSpeed = 110;
 const float stopDistanceCm = 20.0;
 const float resumeDistanceCm = 25.0;
 const unsigned long distanceReadIntervalMs = 60;
+const unsigned long obstacleReportIntervalMs = 250;
 const unsigned long commandTimeoutMs = 1000;
 const unsigned long echoTimeoutUs = 25000;
 
@@ -34,8 +33,7 @@ float distanceCm = -1.0;
 bool obstacleBlocked = false;
 unsigned long lastCommandTime = 0;
 unsigned long lastDistanceReadTime = 0;
-unsigned long turnStartTime = 0;
-char lastTurnCommand = 'S';
+unsigned long lastObstacleReportTime = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -94,10 +92,19 @@ void loop() {
     lastDistanceReadTime = now;
 
     if (distanceCm > 0) {
+      bool wasObstacleBlocked = obstacleBlocked;
       if (obstacleBlocked) {
         obstacleBlocked = distanceCm < resumeDistanceCm;
       } else {
         obstacleBlocked = distanceCm <= stopDistanceCm;
+      }
+
+      if (
+        obstacleBlocked != wasObstacleBlocked
+        || now - lastObstacleReportTime >= obstacleReportIntervalMs
+      ) {
+        espSerial.print(obstacleBlocked ? "<B1>" : "<B0>");
+        lastObstacleReportTime = now;
       }
     }
 
@@ -112,49 +119,24 @@ void loop() {
   }
 
   bool commandExpired = now - lastCommandTime > commandTimeoutMs;
-  bool targetTrackingCommand = (
-    currentCommand == 'F'
-    || currentCommand == 'L'
-    || currentCommand == 'R'
-  );
-  bool shouldStopForObstacle = targetTrackingCommand && obstacleBlocked;
 
-  if (commandExpired || currentCommand == 'S' || shouldStopForObstacle) {
+  if (commandExpired || currentCommand == 'S' || obstacleBlocked) {
     stopMotors();
-    lastTurnCommand = 'S';
   } else if (currentCommand == 'F') {
     // Target color found and path is clear.
     moveForward(forwardSpeed);
-    lastTurnCommand = 'S';
   } else if (currentCommand == 'L') {
     // Target visible on the left side; steer left to center it.
-    int speed = beginTurnIfNeeded(now, 'L', trackTurnSpeed);
-    rotateLeft(speed);
+    rotateLeft(trackTurnSpeed);
   } else if (currentCommand == 'R') {
     // Target visible on the right side; steer right to center it.
-    int speed = beginTurnIfNeeded(now, 'R', trackTurnSpeed);
-    rotateRight(speed);
+    rotateRight(trackTurnSpeed);
   } else if (currentCommand == 'T') {
-    // No target visible; spin to search.
-    int speed = beginTurnIfNeeded(now, 'T', searchTurnSpeed);
-    rotateLeft(speed);
+    // Search pulses use a constant speed for predictable turn angles.
+    rotateLeft(searchTurnSpeed);
   } else {
     stopMotors();
-    lastTurnCommand = 'S';
   }
-}
-
-int beginTurnIfNeeded(unsigned long now, char turnCommand, int baseSpeed) {
-  if (lastTurnCommand != turnCommand) {
-    turnStartTime = now;
-    lastTurnCommand = turnCommand;
-  }
-
-  if (now - turnStartTime < turnKickDurationMs) {
-    return turnKickSpeed;
-  }
-
-  return baseSpeed;
 }
 
 float readDistanceCm() {
