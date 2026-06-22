@@ -86,6 +86,11 @@ Connect the HC-SR04 to the Arduino:
 - `TRIG` to pin `10`
 - `ECHO` to pin `11`
 
+Connect the buzzer to the Arduino:
+
+- buzzer `+` to pin `12`
+- buzzer `-` to `GND`
+
 The movement priority is:
 
 1. Stop when the HC-SR04 reads `20 cm` or less. Movement resumes only after
@@ -100,7 +105,8 @@ The movement priority is:
    horizontally and reasonably centered vertically.
 6. Stop if the HC-SR04 threshold is passed while steering toward or moving
    toward the target.
-7. Stop when `S` is received or no valid command arrives for one second.
+7. Sound the buzzer while the HC-SR04 stop remains active.
+8. Stop when `S` is received or no valid command arrives for one second.
 
 Change `stopDistanceCm` in `arduino/arduino.ino` to adjust the stopping
 distance. OpenCV sends framed commands such as `<T>`, `<L>`, `<R>`, `<F>`, and

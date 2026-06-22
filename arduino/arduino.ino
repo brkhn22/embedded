@@ -16,15 +16,19 @@ const int in4 = 4;
 const int trigPin = 10;
 const int echoPin = 11;
 
+// Buzzer
+const int buzzerPin = 12;
+
 const int forwardSpeed = 120;
-const int searchTurnSpeed = 110;
-const int trackTurnSpeed = 110;
+const int searchTurnSpeed = 150;
+const int trackTurnSpeed = 150;
 const float stopDistanceCm = 20.0;
 const float resumeDistanceCm = 25.0;
 const unsigned long distanceReadIntervalMs = 60;
 const unsigned long obstacleReportIntervalMs = 250;
 const unsigned long commandTimeoutMs = 1000;
 const unsigned long echoTimeoutUs = 25000;
+const unsigned int buzzerAlertHz = 2400;
 
 char currentCommand = 'S';
 char pendingCommand = '\0';
@@ -52,6 +56,9 @@ void setup() {
   pinMode(trigPin, OUTPUT);
   pinMode(echoPin, INPUT);
   digitalWrite(trigPin, LOW);
+
+  pinMode(buzzerPin, OUTPUT);
+  digitalWrite(buzzerPin, LOW);
 
   stopMotors();
 }
@@ -116,6 +123,12 @@ void loop() {
       Serial.print(distanceCm);
       Serial.println(" cm");
     }
+  }
+
+  if (obstacleBlocked) {
+    tone(buzzerPin, buzzerAlertHz);
+  } else {
+    noTone(buzzerPin);
   }
 
   bool commandExpired = now - lastCommandTime > commandTimeoutMs;
