@@ -61,8 +61,15 @@ CENTER_TOLERANCE_X_RATIO = float(
 CENTER_TOLERANCE_Y_RATIO = float(
     os.environ.get("YOLO_CENTER_TOLERANCE_Y_RATIO", "0.18")
 )
-
-
+OBSTACLE_ALERT_SECONDS = float(
+    os.environ.get("YOLO_OBSTACLE_ALERT_SECONDS", "3.0")
+)
+OBSTACLE_REVERSE_SECONDS = float(
+    os.environ.get("YOLO_OBSTACLE_REVERSE_SECONDS", "1.0")
+)
+OBSTACLE_SEARCH_SECONDS = float(
+    os.environ.get("YOLO_OBSTACLE_SEARCH_SECONDS", "2.0")
+)
 def connect_to_esp():
     while True:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -176,11 +183,23 @@ reacquire_nudge_until = 0.0
 center_confirm_history = deque(maxlen=CENTER_CONFIRM_WINDOW)
 approach_locked = False
 last_target_seen_at = None
+obstacle_recovery_phase = None
+obstacle_alert_started = None
+obstacle_reverse_started = None
+obstacle_search_until = 0.0
 last_frame_time = time.monotonic()
 fps = 0.0
 target_class_id = None
 active_target_class = TARGET_CLASS
 active_confidence = CONFIDENCE
+active_control_mode = "single"
+queue_targets = []
+queue_index = 0
+queue_run_id = 0
+queue_finished = False
+queue_target_seen = False
+queue_target_last_seen_at = None
+queue_target_forward_started = False
 last_logged_signature = None
 
 print(f"YOLO hedef sinifi: {TARGET_CLASS}")
@@ -194,7 +213,70 @@ try:
             "confidence": CONFIDENCE,
             **web_control.get_settings(),
         }
-        requested_target_class = live_settings["targetClass"]
+        requested_control_mode = live_settings["controlMode"]
+        requested_queue_targets = list(live_settings["queueTargets"])
+        requested_queue_active = bool(live_settings["queueActive"])
+        requested_queue_run_id = int(live_settings["queueRunId"])
+        active_control_mode = requested_control_mode
+
+        if requested_control_mode == "queue" and requested_queue_active:
+            if requested_queue_run_id != queue_run_id or not queue_targets:
+                queue_targets = requested_queue_targets
+                queue_index = 0
+                queue_run_id = requested_queue_run_id
+                queue_finished = False
+                queue_target_seen = False
+                queue_target_last_seen_at = None
+                queue_target_forward_started = False
+                target_class_id = None
+                last_target_box = None
+                last_target_center = None
+                last_target_command = None
+                search_phase = None
+                search_phase_started = None
+                active_turn_direction = None
+                pending_turn_direction = None
+                pending_turn_frames = 0
+                pending_turn_since = None
+                track_phase = None
+                track_phase_started = None
+                track_phase_direction = None
+                reacquire_nudge_direction = None
+                reacquire_nudge_until = 0.0
+                center_confirm_history.clear()
+                approach_locked = False
+                last_target_seen_at = None
+                obstacle_recovery_phase = None
+                obstacle_alert_started = None
+                obstacle_reverse_started = None
+                obstacle_search_until = 0.0
+                last_command = None
+                print(
+                    "YOLO kuyruk basladi: "
+                    + ", ".join(queue_targets)
+                )
+
+            requested_target_class = (
+                queue_targets[queue_index]
+                if queue_index < len(queue_targets)
+                else live_settings["targetClass"]
+            )
+        else:
+            if requested_control_mode == "single":
+                queue_finished = False
+                queue_target_seen = False
+                queue_target_last_seen_at = None
+                queue_target_forward_started = False
+            elif requested_queue_targets != queue_targets:
+                queue_finished = False
+                queue_target_seen = False
+                queue_target_last_seen_at = None
+                queue_target_forward_started = False
+            queue_targets = requested_queue_targets
+            queue_index = 0
+            queue_run_id = requested_queue_run_id
+            requested_target_class = live_settings["targetClass"]
+
         requested_confidence = float(live_settings["confidence"])
         if requested_target_class != active_target_class:
             active_target_class = requested_target_class
@@ -216,6 +298,13 @@ try:
             center_confirm_history.clear()
             approach_locked = False
             last_target_seen_at = None
+            obstacle_recovery_phase = None
+            obstacle_alert_started = None
+            obstacle_reverse_started = None
+            obstacle_search_until = 0.0
+            queue_target_seen = False
+            queue_target_last_seen_at = None
+            queue_target_forward_started = False
             last_command = None
             print(f"YOLO hedef sinifi degisti: {active_target_class}")
         active_confidence = requested_confidence
@@ -229,6 +318,10 @@ try:
                 if not arduino_obstacle_blocked:
                     print("Arduino mesafe engeli: motorlar durduruldu.")
                 arduino_obstacle_blocked = True
+                if obstacle_recovery_phase is None:
+                    obstacle_recovery_phase = "ALERT"
+                    obstacle_alert_started = time.monotonic()
+                    obstacle_reverse_started = None
                 approach_locked = False
                 center_confirm_history.clear()
                 last_target_command = None
@@ -322,9 +415,23 @@ try:
             cv2.circle(frame, last_target_center, 5, (0, 200, 255), -1)
 
         now_monotonic = time.monotonic()
+        forcing_obstacle_search = now_monotonic < obstacle_search_until
+        if target_visible and forcing_obstacle_search:
+            target_visible = False
+            target_center_x = None
+            target_center_y = None
+            center_error_x = None
+            center_error_y = None
+            last_target_box = None
+            last_target_center = None
+            last_target_seen_at = None
+
         if target_visible:
             decision_source = "LIVE"
             last_target_seen_at = now_monotonic
+            if active_control_mode == "queue":
+                queue_target_seen = True
+                queue_target_last_seen_at = now_monotonic
             reacquire_nudge_direction = None
             reacquire_nudge_until = 0.0
             search_phase = None
@@ -446,6 +553,8 @@ try:
                 track_phase_direction = None
 
             last_target_command = command
+            if active_control_mode == "queue" and command == "F":
+                queue_target_forward_started = True
         else:
             pending_turn_direction = None
             pending_turn_frames = 0
@@ -507,7 +616,9 @@ try:
                         detection_state = "REACQUIRE HOLD"
                         command = "S"
                 else:
-                    decision_source = "SEARCH"
+                    decision_source = (
+                        "RECOVERY_SEARCH" if forcing_obstacle_search else "SEARCH"
+                    )
                     start_search_with_pause = last_target_command in ("L", "R", "S")
                     last_target_box = None
                     last_target_center = None
@@ -535,13 +646,21 @@ try:
                         search_phase_started = now_monotonic
 
                     if search_phase == "TURN":
-                        detection_state = "SEARCH TURN"
+                        detection_state = (
+                            "RECOVERY SEARCH TURN"
+                            if forcing_obstacle_search
+                            else "SEARCH TURN"
+                        )
                         command = "T"
                     else:
-                        detection_state = "SEARCH PAUSE"
+                        detection_state = (
+                            "RECOVERY SEARCH PAUSE"
+                            if forcing_obstacle_search
+                            else "SEARCH PAUSE"
+                        )
                         command = "S"
 
-        if arduino_obstacle_blocked:
+        if obstacle_recovery_phase is not None:
             approach_locked = False
             center_confirm_history.clear()
             last_target_command = None
@@ -556,8 +675,115 @@ try:
             track_phase_direction = None
             search_phase = None
             search_phase_started = None
-            detection_state = "ARDUINO DISTANCE STOP"
+
+            if (
+                obstacle_recovery_phase == "ALERT"
+                and obstacle_alert_started is not None
+                and now_monotonic - obstacle_alert_started >= OBSTACLE_ALERT_SECONDS
+            ):
+                obstacle_recovery_phase = "REVERSE"
+                obstacle_reverse_started = now_monotonic
+
+            if obstacle_recovery_phase == "REVERSE":
+                reverse_elapsed = (
+                    now_monotonic - obstacle_reverse_started
+                    if obstacle_reverse_started is not None
+                    else 0.0
+                )
+                if reverse_elapsed < OBSTACLE_REVERSE_SECONDS:
+                    detection_state = "OBSTACLE REVERSE"
+                    command = "B"
+                else:
+                    obstacle_recovery_phase = None
+                    obstacle_alert_started = None
+                    obstacle_reverse_started = None
+                    arduino_obstacle_blocked = False
+                    queue_target_completed = queue_target_forward_started
+                    if (
+                        active_control_mode == "queue"
+                        and requested_queue_active
+                        and queue_index < len(queue_targets)
+                        and queue_target_completed
+                    ):
+                        queue_index += 1
+                        if queue_index >= len(queue_targets):
+                            queue_finished = True
+                            queue_target_seen = False
+                            queue_target_last_seen_at = None
+                            queue_target_forward_started = False
+                            detection_state = "QUEUE COMPLETE"
+                            command = "S"
+                            search_phase = None
+                            search_phase_started = None
+                            print("YOLO kuyruk tamamlandi.")
+                        else:
+                            active_target_class = queue_targets[queue_index]
+                            queue_target_seen = False
+                            queue_target_last_seen_at = None
+                            queue_target_forward_started = False
+                            target_class_id = None
+                            last_target_box = None
+                            last_target_center = None
+                            center_confirm_history.clear()
+                            obstacle_search_until = (
+                                now_monotonic + OBSTACLE_SEARCH_SECONDS
+                            )
+                            detection_state = "QUEUE NEXT TARGET"
+                            command = "S"
+                            search_phase = "TURN"
+                            search_phase_started = now_monotonic
+                            print(
+                                "YOLO kuyruk siradaki hedef: "
+                                f"{active_target_class}"
+                            )
+                    elif active_control_mode == "queue" and requested_queue_active:
+                        obstacle_search_until = now_monotonic + OBSTACLE_SEARCH_SECONDS
+                        detection_state = "QUEUE TARGET NOT CONFIRMED"
+                        command = "S"
+                        search_phase = "TURN"
+                        search_phase_started = now_monotonic
+                    else:
+                        obstacle_search_until = now_monotonic + OBSTACLE_SEARCH_SECONDS
+                        detection_state = "OBSTACLE RECOVERY DONE"
+                        command = "S"
+                        search_phase = "TURN"
+                        search_phase_started = now_monotonic
+            else:
+                detection_state = "OBSTACLE ALERT"
+                command = "S"
+
+        queue_running = (
+            active_control_mode == "queue"
+            and requested_queue_active
+            and not queue_finished
+            and bool(queue_targets)
+            and queue_index < len(queue_targets)
+        )
+        if active_control_mode == "queue" and not queue_running:
+            approach_locked = False
+            center_confirm_history.clear()
+            last_target_command = None
+            last_target_seen_at = None
+            reacquire_nudge_direction = None
+            reacquire_nudge_until = 0.0
+            pending_turn_direction = None
+            pending_turn_frames = 0
+            pending_turn_since = None
+            track_phase = None
+            track_phase_started = None
+            track_phase_direction = None
+            search_phase = None
+            search_phase_started = None
+            target_visible = False
+            confidence_score = 0.0
+            candidate_area = 0.0
             command = "S"
+            if queue_finished:
+                detection_state = "QUEUE COMPLETE"
+            elif queue_targets:
+                detection_state = "QUEUE READY"
+            else:
+                detection_state = "QUEUE EMPTY"
 
         if command == "L":
             active_turn_direction = "L"
@@ -567,6 +793,8 @@ try:
             # Arduino implements T with the same motor direction as L.
             active_turn_direction = "L"
         elif command == "F":
+            active_turn_direction = None
+        elif command == "B":
             active_turn_direction = None
         elif (
             detection_state not in ("SEARCH PAUSE",)
@@ -594,14 +822,23 @@ try:
             approach_locked,
             last_target_command,
             arduino_obstacle_blocked,
+            obstacle_recovery_phase,
+            obstacle_search_until,
+            active_control_mode,
+            queue_index,
+            len(queue_targets),
+            queue_run_id,
+            queue_finished,
         )
         should_log = (
             log_signature != last_logged_signature
             and (
-                command in ("L", "R", "F", "S")
+                command in ("L", "R", "F", "S", "B")
                 or detection_state.startswith("TRACK ")
                 or detection_state.startswith("REACQUIRE ")
                 or detection_state.startswith("REVERSAL WAIT")
+                or detection_state.startswith("OBSTACLE ")
+                or detection_state.startswith("QUEUE ")
                 or detection_state in (
                     "ADVANCING",
                     "APPROACHING",
@@ -626,6 +863,11 @@ try:
                         f"lock={int(approach_locked)}",
                         f"last={last_target_command if last_target_command is not None else '--'}",
                         f"blocked={int(arduino_obstacle_blocked)}",
+                        f"recovery={obstacle_recovery_phase if obstacle_recovery_phase is not None else '--'}",
+                        f"mode={active_control_mode}",
+                        f"queue={queue_index}/{len(queue_targets)}",
+                        f"run={queue_run_id}",
+                        f"finished={int(queue_finished)}",
                     ]
                 )
             )
@@ -639,6 +881,12 @@ try:
             candidate_area=candidate_area,
             detection_state=detection_state,
             target_class=active_target_class,
+            control_mode=active_control_mode,
+            queue_active=queue_running,
+            queue_index=queue_index,
+            queue_total=len(queue_targets),
+            queue_run_id=queue_run_id,
+            queue_finished=queue_finished,
         )
 
         cv2.putText(

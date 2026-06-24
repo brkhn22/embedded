@@ -37,6 +37,8 @@ http://localhost:8001
 
 From this panel you can:
 
+- keep the existing realtime single-target mode
+- build and start a multi-object queue
 - choose any COCO object class
 - change YOLO confidence threshold
 - see whether the YOLO detector is connected
@@ -59,6 +61,9 @@ YOLO_CENTER_CONFIRM_FRAMES=3
 YOLO_CENTER_CONFIRM_WINDOW=5
 YOLO_CENTER_TOLERANCE_X_RATIO=0.12
 YOLO_CENTER_TOLERANCE_Y_RATIO=0.16
+YOLO_OBSTACLE_ALERT_SECONDS=3.0
+YOLO_OBSTACLE_REVERSE_SECONDS=1.0
+YOLO_OBSTACLE_SEARCH_SECONDS=2.0
 YOLO_WEB_URL=http://127.0.0.1:8001
 ```
 
@@ -66,13 +71,22 @@ YOLO_WEB_URL=http://127.0.0.1:8001
 
 - `T`: turn for `0.5s` while searching
 - `S`: stop when the target is too close in the frame
+- `B`: reverse after a completed distance-stop alert
 - `L` / `R`: use short turn pulses to center the target
 - `F`: move forward while the target remains in the approach region
 - after a centered target is confirmed, lock into `F` even if the target
   disappears because it is close to the camera
+- in queue mode, complete the current queued object after the distance-stop
+  alert and reverse recovery finish, then continue with the next queued object
+- queue advancement now requires the current queued target to have produced at
+  least one `F` approach command; unrelated obstacle stops keep the same queued
+  target active
+- when the queue is complete, stop with `S` and mark the run finished
 - the Arduino ultrasonic threshold remains responsible for stopping the motors
 - Arduino reports `<B1>` when the distance stop activates and `<B0>` when it
-  clears; YOLO resets its center/approach state and holds `S` while blocked
+  clears; YOLO resets its center/approach state, holds `S` for
+  `YOLO_OBSTACLE_ALERT_SECONDS`, reverses for `YOLO_OBSTACLE_REVERSE_SECONDS`,
+  then forces the search cycle for `YOLO_OBSTACLE_SEARCH_SECONDS`
 
 Bidirectional feedback requires the Arduino software-serial TX pin (`3`) to be
 connected through a 5V-to-3.3V level shifter or voltage divider to the

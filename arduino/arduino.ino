@@ -20,12 +20,14 @@ const int echoPin = 11;
 const int buzzerPin = 12;
 
 const int forwardSpeed = 120;
+const int reverseSpeed = 110;
 const int searchTurnSpeed = 150;
 const int trackTurnSpeed = 150;
 const float stopDistanceCm = 20.0;
 const float resumeDistanceCm = 25.0;
 const unsigned long distanceReadIntervalMs = 60;
 const unsigned long obstacleReportIntervalMs = 250;
+const unsigned long obstacleBuzzerDurationMs = 3000;
 const unsigned long commandTimeoutMs = 1000;
 const unsigned long echoTimeoutUs = 25000;
 const unsigned int buzzerAlertHz = 2400;
@@ -38,6 +40,7 @@ bool obstacleBlocked = false;
 unsigned long lastCommandTime = 0;
 unsigned long lastDistanceReadTime = 0;
 unsigned long lastObstacleReportTime = 0;
+unsigned long obstacleAlertStartedTime = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -72,7 +75,7 @@ void loop() {
       pendingCommand = '\0';
     } else if (receivingCommand && (
         received == 'F' || received == 'L' || received == 'R'
-        || received == 'S' || received == 'T')) {
+        || received == 'S' || received == 'T' || received == 'B')) {
       pendingCommand = received;
     } else if (receivingCommand && received == '>') {
       if (pendingCommand != '\0') {
@@ -106,6 +109,10 @@ void loop() {
         obstacleBlocked = distanceCm <= stopDistanceCm;
       }
 
+      if (!wasObstacleBlocked && obstacleBlocked) {
+        obstacleAlertStartedTime = now;
+      }
+
       if (
         obstacleBlocked != wasObstacleBlocked
         || now - lastObstacleReportTime >= obstacleReportIntervalMs
@@ -125,7 +132,10 @@ void loop() {
     }
   }
 
-  if (obstacleBlocked) {
+  if (
+      obstacleBlocked
+      && now - obstacleAlertStartedTime < obstacleBuzzerDurationMs
+  ) {
     tone(buzzerPin, buzzerAlertHz);
   } else {
     noTone(buzzerPin);
@@ -133,7 +143,12 @@ void loop() {
 
   bool commandExpired = now - lastCommandTime > commandTimeoutMs;
 
-  if (commandExpired || currentCommand == 'S' || obstacleBlocked) {
+  if (commandExpired || currentCommand == 'S') {
+    stopMotors();
+  } else if (currentCommand == 'B') {
+    // Back away after a distance stop so the robot can resume searching.
+    moveBackward(reverseSpeed);
+  } else if (obstacleBlocked) {
     stopMotors();
   } else if (currentCommand == 'F') {
     // Target color found and path is clear.
@@ -176,6 +191,17 @@ void moveForward(int speed) {
 
   digitalWrite(in3, HIGH);
   digitalWrite(in4, LOW);
+}
+
+void moveBackward(int speed) {
+  analogWrite(enA, speed);
+  analogWrite(enB, speed);
+
+  digitalWrite(in1, LOW);
+  digitalWrite(in2, HIGH);
+
+  digitalWrite(in3, LOW);
+  digitalWrite(in4, HIGH);
 }
 
 void rotateLeft(int speed) {

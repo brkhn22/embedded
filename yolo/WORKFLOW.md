@@ -194,6 +194,14 @@ Arduino:
 - Mesafe `20 cm` ve altina inerse engel var kabul eder.
 - Motorlari durdurur.
 - Python tarafina `<B1>` gonderir.
+- Buzzer'i en fazla `3` saniye caldirir.
+
+Python:
+
+- `<B1>` gelince merkezleme ve yaklasma bilgisini sifirlar.
+- `3` saniye `S` komutuyla durur.
+- Sonra kisa sure `B` komutuyla geri gider.
+- Geri cikma bitince kisa sure zorunlu arama moduna doner.
 
 Mesafe tekrar guvenli seviyeye ciktiginda:
 
@@ -204,21 +212,25 @@ Parametreler:
 
 - `stopDistanceCm = 20.0`
 - `resumeDistanceCm = 25.0`
+- `YOLO_OBSTACLE_ALERT_SECONDS = 3.0`
+- `YOLO_OBSTACLE_REVERSE_SECONDS = 1.0`
+- `YOLO_OBSTACLE_SEARCH_SECONDS = 2.0`
 
 Onemli nokta:
 
-- Hedef hala gorunuyor olsa bile mesafe esigi gecildiysa robot durur.
-- Python tarafi da bunu gorunce ileri gitme kilidini ve merkez bilgisini sifirlar.
+- Hedef hala gorunuyor olsa bile mesafe esigi gecildiysa robot once durur.
+- Uyari ve geri cikma tamamlaninca ayni objeye takili kalmadan aramaya doner.
 
 ## 10. Komut Onceligi
 
 Pratikte komut onceligi su sekildedir:
 
-1. Mesafe engeli varsa `S`
-2. Hedef ortalanmis ve yaklasma kilidi aktifse `F`
-3. Hedef gorunuyorsa `L` veya `R` ile ortalama
-4. Hedef yeni kaybolduysa `REACQUIRE HOLD` veya `REACQUIRE NUDGE`
-5. Hedef uzun sure yoksa `T` ile arama
+1. Mesafe engeli yeni geldiyse `S` ile 3 saniye dur
+2. Uyari bittiyse `B` ile kisa sure geri git
+3. Hedef ortalanmis ve yaklasma kilidi aktifse `F`
+4. Hedef gorunuyorsa `L` veya `R` ile ortalama
+5. Hedef yeni kaybolduysa `REACQUIRE HOLD` veya `REACQUIRE NUDGE`
+6. Hedef uzun sure yoksa `T` ile arama
 
 ## 11. ESP32'nin Gorevi
 
@@ -306,4 +318,3 @@ Kontrol edilmesi gerekenler:
 - Arduino'dan `<B1>` geri bildirimi geliyor mu
 - ESP32 bu bilgiyi Python'a geri geciyor mu
 - Ultrasonik sensor dogru mesafe olcuyor mu
-
