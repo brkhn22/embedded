@@ -93,20 +93,57 @@ h1 {
   line-height: 1.6;
 }
 
+.mode-card,
 .picker-card,
+.queue-card,
 .controls label {
   display: grid;
   gap: 12px;
 }
 
-.picker-card {
+.mode-card,
+.picker-card,
+.queue-card {
   padding: 20px;
   border-radius: 16px;
   background: #0a0e14;
 }
 
+.mode-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.mode-tabs label {
+  position: relative;
+}
+
+.mode-tabs input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mode-tabs span {
+  display: block;
+  padding: 12px 14px;
+  border: 1px solid #344052;
+  border-radius: 10px;
+  background: #171e28;
+  color: #c2ccda;
+  text-align: center;
+  font-weight: 700;
+}
+
+.mode-tabs input:checked + span {
+  border-color: #65e6bf;
+  color: #65e6bf;
+}
+
 select,
-input[type="range"] {
+input[type="range"],
+button {
   width: 100%;
 }
 
@@ -117,6 +154,86 @@ select {
   background: #171e28;
   color: #f3f6fb;
   font-size: 1rem;
+}
+
+.queue-card {
+  margin-top: 16px;
+}
+
+.queue-add-row,
+.queue-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+}
+
+button {
+  min-height: 46px;
+  padding: 0 16px;
+  border: 1px solid #344052;
+  border-radius: 10px;
+  background: #243044;
+  color: #f3f6fb;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  border-color: #4f82ff;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+#start-queue {
+  background: #1f6f59;
+}
+
+#stop-queue {
+  background: #6d2b34;
+}
+
+.queue-list {
+  display: grid;
+  gap: 8px;
+  min-height: 46px;
+}
+
+.queue-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid #26303d;
+  border-radius: 10px;
+  background: #111824;
+}
+
+.queue-item span {
+  overflow: hidden;
+  color: #f3f6fb;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.queue-item button {
+  width: auto;
+  min-height: 34px;
+  padding: 0 10px;
+  background: #171e28;
+  font-size: 0.86rem;
+}
+
+.queue-empty {
+  margin: 0;
+  padding: 12px;
+  border: 1px dashed #344052;
+  border-radius: 10px;
+  color: #9ca9ba;
 }
 
 .controls {

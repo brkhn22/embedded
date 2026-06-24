@@ -12,6 +12,10 @@ from yolo.coco_classes import COCO_CLASSES
 DEFAULT_SETTINGS = {
     "targetClass": "bottle",
     "confidence": 0.45,
+    "controlMode": "single",
+    "queueTargets": [],
+    "queueActive": False,
+    "queueRunId": 0,
 }
 
 LIMITS = {
@@ -35,11 +39,34 @@ class YoloSettings:
         with self._lock:
             updated = deepcopy(self._settings)
 
+            if "controlMode" in values:
+                control_mode = values["controlMode"]
+                if control_mode not in ("single", "queue"):
+                    raise ValueError("controlMode must be single or queue")
+                updated["controlMode"] = control_mode
+                if control_mode == "single":
+                    updated["queueActive"] = False
+
             if "targetClass" in values:
                 target_class = values["targetClass"]
                 if target_class not in COCO_CLASSES:
                     raise ValueError("targetClass must be a valid COCO class")
                 updated["targetClass"] = target_class
+
+            if "queueTargets" in values:
+                queue_targets = values["queueTargets"]
+                if not isinstance(queue_targets, list):
+                    raise ValueError("queueTargets must be a list")
+                if len(queue_targets) > len(COCO_CLASSES):
+                    raise ValueError("queueTargets has too many items")
+
+                cleaned_targets = []
+                for target_class in queue_targets:
+                    if target_class not in COCO_CLASSES:
+                        raise ValueError("queueTargets must contain valid COCO classes")
+                    if target_class not in cleaned_targets:
+                        cleaned_targets.append(target_class)
+                updated["queueTargets"] = cleaned_targets
 
             for name, (minimum, maximum) in LIMITS.items():
                 if name not in values:
@@ -54,8 +81,27 @@ class YoloSettings:
                     )
                 updated[name] = round(value, 2)
 
+            queue_action = values.get("queueAction")
+            if queue_action is not None:
+                if queue_action == "start":
+                    if not updated["queueTargets"]:
+                        raise ValueError("Select at least one queued object")
+                    updated["controlMode"] = "queue"
+                    updated["queueActive"] = True
+                    updated["queueRunId"] += 1
+                elif queue_action == "stop":
+                    updated["queueActive"] = False
+                else:
+                    raise ValueError("queueAction must be start or stop")
+
             self._settings = updated
             return deepcopy(updated)
+
+    def finish_queue(self, run_id):
+        with self._lock:
+            if run_id == self._settings["queueRunId"]:
+                self._settings["queueActive"] = False
+            return deepcopy(self._settings)
 
 
 class VisionStatus:
@@ -80,6 +126,12 @@ class VisionStatus:
                 "candidateArea",
                 "detectionState",
                 "targetClass",
+                "controlMode",
+                "queueActive",
+                "queueIndex",
+                "queueTotal",
+                "queueRunId",
+                "queueFinished",
             )
             if key in details
         }
@@ -108,6 +160,12 @@ def _handler_factory(settings, vision_status, web_root):
         def __init__(self, *args, **kwargs):
             super().__init__(*args, directory=str(web_root), **kwargs)
 
+        def end_headers(self):
+            self.send_header("Cache-Control", "no-store, no-cache, must-revalidate")
+            self.send_header("Pragma", "no-cache")
+            self.send_header("Expires", "0")
+            super().end_headers()
+
         def do_GET(self):
             path = urlparse(self.path).path
             if path == "/api/settings":
@@ -133,6 +191,8 @@ def _handler_factory(settings, vision_status, web_root):
                     self._send_json(settings.update(payload))
                 else:
                     vision_status.heartbeat(payload)
+                    if payload.get("queueFinished"):
+                        settings.finish_queue(payload.get("queueRunId"))
                     self._send_json(settings.get())
             except (json.JSONDecodeError, ValueError) as error:
                 self._send_json({"error": str(error)}, status=400)
@@ -178,4 +238,3 @@ def run_yolo_server(host="0.0.0.0", port=8001):
 
 if __name__ == "__main__":
     run_yolo_server()
-

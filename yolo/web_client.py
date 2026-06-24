@@ -8,6 +8,10 @@ from urllib.request import Request, urlopen
 DEFAULT_SETTINGS = {
     "targetClass": "bottle",
     "confidence": 0.45,
+    "controlMode": "single",
+    "queueTargets": [],
+    "queueActive": False,
+    "queueRunId": 0,
 }
 
 
@@ -45,6 +49,12 @@ class WebControlClient:
         candidate_area=0,
         detection_state="NO TARGET",
         target_class="bottle",
+        control_mode="single",
+        queue_active=False,
+        queue_index=0,
+        queue_total=0,
+        queue_run_id=0,
+        queue_finished=False,
     ):
         with self._lock:
             self._details = {
@@ -55,6 +65,12 @@ class WebControlClient:
                 "candidateArea": round(candidate_area),
                 "detectionState": detection_state,
                 "targetClass": target_class,
+                "controlMode": control_mode,
+                "queueActive": queue_active,
+                "queueIndex": queue_index,
+                "queueTotal": queue_total,
+                "queueRunId": queue_run_id,
+                "queueFinished": queue_finished,
             }
 
     def _run(self):
@@ -80,4 +96,3 @@ class WebControlClient:
                 pass
 
             self._stop_event.wait(self._interval)
-

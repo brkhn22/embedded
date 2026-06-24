@@ -17,17 +17,43 @@
             <p id="connection-detail">Waiting for the detector process...</p>
           </div>
         </div>
-        <h1>Target object</h1>
+        <h1>YOLO control</h1>
         <p class="subtitle">
-          Pick a COCO object class for the robotic car. Changes are applied
-          immediately to the running YOLO process.
+          Switch between realtime single-target tracking and a started object
+          queue.
         </p>
       </header>
 
       <form id="settings-form">
-        <section class="picker-card">
-          <label for="targetClass">Pick an object</label>
+        <section class="mode-card">
+          <div class="mode-tabs" role="radiogroup" aria-label="YOLO mode">
+            <label>
+              <input type="radio" name="controlMode" value="single" checked>
+              <span>Single</span>
+            </label>
+            <label>
+              <input type="radio" name="controlMode" value="queue">
+              <span>Queue</span>
+            </label>
+          </div>
+        </section>
+
+        <section id="single-panel" class="picker-card">
+          <label for="targetClass">Live target</label>
           <select id="targetClass" name="targetClass"></select>
+        </section>
+
+        <section id="queue-panel" class="queue-card" hidden>
+          <label for="queueTarget">Queued targets</label>
+          <div class="queue-add-row">
+            <select id="queueTarget" name="queueTarget"></select>
+            <button id="add-queue-target" type="button">Add</button>
+          </div>
+          <div id="queue-list" class="queue-list" aria-live="polite"></div>
+          <div class="queue-actions">
+            <button id="start-queue" type="button">Start</button>
+            <button id="stop-queue" type="button">Stop</button>
+          </div>
         </section>
 
         <section class="controls">
@@ -49,6 +75,7 @@
 
         <div class="status-row">
           <div id="target-badge" class="target-badge">--</div>
+          <div id="queue-badge" class="target-badge" hidden>Queue idle</div>
           <p id="status" role="status">Loading settings...</p>
         </div>
       </form>
@@ -57,4 +84,3 @@
     <script src="/app.js"></script>
   </body>
 </html>
-

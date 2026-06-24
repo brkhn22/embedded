@@ -37,6 +37,8 @@ http://localhost:8001
 
 From this panel you can:
 
+- keep the existing realtime single-target mode
+- build and start a multi-object queue
 - choose any COCO object class
 - change YOLO confidence threshold
 - see whether the YOLO detector is connected
@@ -74,6 +76,12 @@ YOLO_WEB_URL=http://127.0.0.1:8001
 - `F`: move forward while the target remains in the approach region
 - after a centered target is confirmed, lock into `F` even if the target
   disappears because it is close to the camera
+- in queue mode, complete the current queued object after the distance-stop
+  alert and reverse recovery finish, then continue with the next queued object
+- queue advancement now requires the current queued target to have produced at
+  least one `F` approach command; unrelated obstacle stops keep the same queued
+  target active
+- when the queue is complete, stop with `S` and mark the run finished
 - the Arduino ultrasonic threshold remains responsible for stopping the motors
 - Arduino reports `<B1>` when the distance stop activates and `<B0>` when it
   clears; YOLO resets its center/approach state, holds `S` for
