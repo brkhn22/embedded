@@ -91,6 +91,15 @@ Connect the buzzer to the Arduino:
 - buzzer `+` to pin `12`
 - buzzer `-` to `GND`
 
+Connect the common-anode RGB status LED to the Arduino:
+
+- common anode to `5V`
+- green channel, with its resistor, to `A0`
+- red channel, with its resistor, to `A1`
+
+The LED is red while YOLO is searching and green while the target is found.
+Because the RGB LED is common-anode, the Arduino drives the active color LOW.
+
 The movement priority is:
 
 1. Stop when the HC-SR04 reads `20 cm` or less. Movement resumes only after

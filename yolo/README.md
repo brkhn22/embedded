@@ -83,6 +83,9 @@ YOLO_WEB_URL=http://127.0.0.1:8001
   target active
 - when the queue is complete, stop with `S` and mark the run finished
 - the Arduino ultrasonic threshold remains responsible for stopping the motors
+- YOLO also sends `<N>` while searching and `<G>` while the selected target is
+  visible or the approach lock is active; Arduino uses those messages to drive
+  the common-anode RGB LED red or green without changing the motor command
 - Arduino reports `<B1>` when the distance stop activates and `<B0>` when it
   clears; YOLO resets its center/approach state, holds `S` for
   `YOLO_OBSTACLE_ALERT_SECONDS`, reverses for `YOLO_OBSTACLE_REVERSE_SECONDS`,

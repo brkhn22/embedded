@@ -19,6 +19,10 @@ const int echoPin = 11;
 // Buzzer
 const int buzzerPin = 12;
 
+// Common-anode RGB LED channels. LOW turns a color on, HIGH turns it off.
+const int greenLedPin = A0;
+const int redLedPin = A1;
+
 const int forwardSpeed = 120;
 const int reverseSpeed = 110;
 const int searchTurnSpeed = 150;
@@ -42,6 +46,10 @@ unsigned long lastDistanceReadTime = 0;
 unsigned long lastObstacleReportTime = 0;
 unsigned long obstacleAlertStartedTime = 0;
 
+bool isMotorCommand(char command);
+bool isLedCommand(char command);
+void setTargetLed(bool targetFound);
+
 void setup() {
   Serial.begin(9600);
 
@@ -63,6 +71,10 @@ void setup() {
   pinMode(buzzerPin, OUTPUT);
   digitalWrite(buzzerPin, LOW);
 
+  pinMode(greenLedPin, OUTPUT);
+  pinMode(redLedPin, OUTPUT);
+  setTargetLed(false);
+
   stopMotors();
 }
 
@@ -74,17 +86,20 @@ void loop() {
       receivingCommand = true;
       pendingCommand = '\0';
     } else if (receivingCommand && (
-        received == 'F' || received == 'L' || received == 'R'
-        || received == 'S' || received == 'T' || received == 'B')) {
+        isMotorCommand(received) || isLedCommand(received))) {
       pendingCommand = received;
     } else if (receivingCommand && received == '>') {
       if (pendingCommand != '\0') {
-        bool commandChanged = currentCommand != pendingCommand;
-        currentCommand = pendingCommand;
-        lastCommandTime = millis();
-        if (commandChanged) {
-          Serial.print("Command: ");
-          Serial.println(currentCommand);
+        if (isLedCommand(pendingCommand)) {
+          setTargetLed(pendingCommand == 'G');
+        } else {
+          bool commandChanged = currentCommand != pendingCommand;
+          currentCommand = pendingCommand;
+          lastCommandTime = millis();
+          if (commandChanged) {
+            Serial.print("Command: ");
+            Serial.println(currentCommand);
+          }
         }
       }
       receivingCommand = false;
@@ -165,6 +180,22 @@ void loop() {
   } else {
     stopMotors();
   }
+}
+
+bool isMotorCommand(char command) {
+  return (
+    command == 'F' || command == 'L' || command == 'R'
+    || command == 'S' || command == 'T' || command == 'B'
+  );
+}
+
+bool isLedCommand(char command) {
+  return command == 'G' || command == 'N';
+}
+
+void setTargetLed(bool targetFound) {
+  digitalWrite(greenLedPin, targetFound ? LOW : HIGH);
+  digitalWrite(redLedPin, targetFound ? HIGH : LOW);
 }
 
 float readDistanceCm() {

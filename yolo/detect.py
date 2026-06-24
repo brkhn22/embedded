@@ -37,6 +37,8 @@ DEBUG_LOG_PATH = Path(
 )
 
 SEND_INTERVAL = 0.1
+LED_TARGET_FOUND_COMMAND = "G"
+LED_SEARCHING_COMMAND = "N"
 SEARCH_TURN_SECONDS = float(os.environ.get("YOLO_SEARCH_TURN_SECONDS", "0.35"))
 SEARCH_PAUSE_SECONDS = float(os.environ.get("YOLO_SEARCH_PAUSE_SECONDS", "0.5"))
 TRACK_TURN_SECONDS = float(os.environ.get("YOLO_TRACK_TURN_SECONDS", "0.08"))
@@ -164,6 +166,8 @@ web_control.start()
 
 last_command = None
 last_send_time = 0
+last_led_command = None
+last_led_send_time = 0
 feedback_buffer = ""
 arduino_obstacle_blocked = False
 last_target_box = None
@@ -808,6 +812,19 @@ try:
             send_command(sock, command)
             last_command = command
             last_send_time = current_time
+
+        led_command = (
+            LED_TARGET_FOUND_COMMAND
+            if target_visible or approach_locked
+            else LED_SEARCHING_COMMAND
+        )
+        if (
+            led_command != last_led_command
+            or current_time - last_led_send_time >= SEND_INTERVAL
+        ):
+            send_command(sock, led_command)
+            last_led_command = led_command
+            last_led_send_time = current_time
 
         log_signature = (
             command,
