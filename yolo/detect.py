@@ -61,6 +61,15 @@ CENTER_TOLERANCE_X_RATIO = float(
 CENTER_TOLERANCE_Y_RATIO = float(
     os.environ.get("YOLO_CENTER_TOLERANCE_Y_RATIO", "0.18")
 )
+OBSTACLE_ALERT_SECONDS = float(
+    os.environ.get("YOLO_OBSTACLE_ALERT_SECONDS", "3.0")
+)
+OBSTACLE_REVERSE_SECONDS = float(
+    os.environ.get("YOLO_OBSTACLE_REVERSE_SECONDS", "1.0")
+)
+OBSTACLE_SEARCH_SECONDS = float(
+    os.environ.get("YOLO_OBSTACLE_SEARCH_SECONDS", "2.0")
+)
 
 
 def connect_to_esp():
@@ -176,6 +185,10 @@ reacquire_nudge_until = 0.0
 center_confirm_history = deque(maxlen=CENTER_CONFIRM_WINDOW)
 approach_locked = False
 last_target_seen_at = None
+obstacle_recovery_phase = None
+obstacle_alert_started = None
+obstacle_reverse_started = None
+obstacle_search_until = 0.0
 last_frame_time = time.monotonic()
 fps = 0.0
 target_class_id = None
@@ -216,6 +229,10 @@ try:
             center_confirm_history.clear()
             approach_locked = False
             last_target_seen_at = None
+            obstacle_recovery_phase = None
+            obstacle_alert_started = None
+            obstacle_reverse_started = None
+            obstacle_search_until = 0.0
             last_command = None
             print(f"YOLO hedef sinifi degisti: {active_target_class}")
         active_confidence = requested_confidence
@@ -229,6 +246,10 @@ try:
                 if not arduino_obstacle_blocked:
                     print("Arduino mesafe engeli: motorlar durduruldu.")
                 arduino_obstacle_blocked = True
+                if obstacle_recovery_phase is None:
+                    obstacle_recovery_phase = "ALERT"
+                    obstacle_alert_started = time.monotonic()
+                    obstacle_reverse_started = None
                 approach_locked = False
                 center_confirm_history.clear()
                 last_target_command = None
@@ -322,6 +343,17 @@ try:
             cv2.circle(frame, last_target_center, 5, (0, 200, 255), -1)
 
         now_monotonic = time.monotonic()
+        forcing_obstacle_search = now_monotonic < obstacle_search_until
+        if target_visible and forcing_obstacle_search:
+            target_visible = False
+            target_center_x = None
+            target_center_y = None
+            center_error_x = None
+            center_error_y = None
+            last_target_box = None
+            last_target_center = None
+            last_target_seen_at = None
+
         if target_visible:
             decision_source = "LIVE"
             last_target_seen_at = now_monotonic
@@ -507,7 +539,9 @@ try:
                         detection_state = "REACQUIRE HOLD"
                         command = "S"
                 else:
-                    decision_source = "SEARCH"
+                    decision_source = (
+                        "RECOVERY_SEARCH" if forcing_obstacle_search else "SEARCH"
+                    )
                     start_search_with_pause = last_target_command in ("L", "R", "S")
                     last_target_box = None
                     last_target_center = None
@@ -535,13 +569,21 @@ try:
                         search_phase_started = now_monotonic
 
                     if search_phase == "TURN":
-                        detection_state = "SEARCH TURN"
+                        detection_state = (
+                            "RECOVERY SEARCH TURN"
+                            if forcing_obstacle_search
+                            else "SEARCH TURN"
+                        )
                         command = "T"
                     else:
-                        detection_state = "SEARCH PAUSE"
+                        detection_state = (
+                            "RECOVERY SEARCH PAUSE"
+                            if forcing_obstacle_search
+                            else "SEARCH PAUSE"
+                        )
                         command = "S"
 
-        if arduino_obstacle_blocked:
+        if obstacle_recovery_phase is not None:
             approach_locked = False
             center_confirm_history.clear()
             last_target_command = None
@@ -556,8 +598,37 @@ try:
             track_phase_direction = None
             search_phase = None
             search_phase_started = None
-            detection_state = "ARDUINO DISTANCE STOP"
-            command = "S"
+
+            if (
+                obstacle_recovery_phase == "ALERT"
+                and obstacle_alert_started is not None
+                and now_monotonic - obstacle_alert_started >= OBSTACLE_ALERT_SECONDS
+            ):
+                obstacle_recovery_phase = "REVERSE"
+                obstacle_reverse_started = now_monotonic
+
+            if obstacle_recovery_phase == "REVERSE":
+                reverse_elapsed = (
+                    now_monotonic - obstacle_reverse_started
+                    if obstacle_reverse_started is not None
+                    else 0.0
+                )
+                if reverse_elapsed < OBSTACLE_REVERSE_SECONDS:
+                    detection_state = "OBSTACLE REVERSE"
+                    command = "B"
+                else:
+                    obstacle_recovery_phase = None
+                    obstacle_alert_started = None
+                    obstacle_reverse_started = None
+                    arduino_obstacle_blocked = False
+                    obstacle_search_until = now_monotonic + OBSTACLE_SEARCH_SECONDS
+                    detection_state = "OBSTACLE RECOVERY DONE"
+                    command = "S"
+                    search_phase = "TURN"
+                    search_phase_started = now_monotonic
+            else:
+                detection_state = "OBSTACLE ALERT"
+                command = "S"
 
         if command == "L":
             active_turn_direction = "L"
@@ -567,6 +638,8 @@ try:
             # Arduino implements T with the same motor direction as L.
             active_turn_direction = "L"
         elif command == "F":
+            active_turn_direction = None
+        elif command == "B":
             active_turn_direction = None
         elif (
             detection_state not in ("SEARCH PAUSE",)
@@ -594,14 +667,17 @@ try:
             approach_locked,
             last_target_command,
             arduino_obstacle_blocked,
+            obstacle_recovery_phase,
+            obstacle_search_until,
         )
         should_log = (
             log_signature != last_logged_signature
             and (
-                command in ("L", "R", "F", "S")
+                command in ("L", "R", "F", "S", "B")
                 or detection_state.startswith("TRACK ")
                 or detection_state.startswith("REACQUIRE ")
                 or detection_state.startswith("REVERSAL WAIT")
+                or detection_state.startswith("OBSTACLE ")
                 or detection_state in (
                     "ADVANCING",
                     "APPROACHING",
@@ -626,6 +702,7 @@ try:
                         f"lock={int(approach_locked)}",
                         f"last={last_target_command if last_target_command is not None else '--'}",
                         f"blocked={int(arduino_obstacle_blocked)}",
+                        f"recovery={obstacle_recovery_phase if obstacle_recovery_phase is not None else '--'}",
                     ]
                 )
             )
