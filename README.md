@@ -53,16 +53,25 @@ Target color, HSV thresholds, and steering behavior are applied while OpenCV is
 running. Press `q` in an OpenCV window to stop the vision process; the page
 changes back to `OpenCV disconnected` within three seconds.
 
-`Minimum color density` controls how much of a detected object's bounding box
-must contain the selected color before OpenCV sends `F`. The camera window and
-web connection card show live FPS, measured color density, candidate area, and
-the detection state:
+`Minimum color density` controls how much of a detected candidate's bounding
+box must contain the selected color before OpenCV treats it as a valid target.
+The camera window and web connection card show live FPS, measured color
+density, candidate area, and the detection state:
 
-- `VISIBLE`: all thresholds passed; OpenCV sends `F`.
+- `VISIBLE`: the target passes the color and area thresholds.
 - `CONFIRMING`: the car has stopped after first seeing the target.
 - `CONFIRMING MEMORY`: the last valid target position is being held briefly.
 - `TRACK LEFT` / `TRACK RIGHT`: the target is visible but off-center.
-- `CENTERED`: the target is centered, so OpenCV sends `F`.
+- `APPROACHING`: the target is centered horizontally well enough to move
+  forward.
+- `ADVANCING`: the target is centered horizontally and vertically enough to
+  continue forward.
+- `ADVANCING MEMORY`: the robot continues a short forward burst after briefly
+  losing sight of a valid target.
+- `RECHECKING`: the robot is paused between forward bursts before checking the
+  next frame again.
+- `TOO CLOSE IN FRAME`: the target is too low in the image, so OpenCV sends
+  `S` instead of moving forward.
 - `AREA LOW`: lower `Minimum object area` if the target is genuinely visible.
 - `DENSITY LOW`: lower `Minimum color density` or tune the HSV minimums.
 - `NO COLOR`: the selected hue is not present in the mask.
@@ -105,16 +114,17 @@ The movement priority is:
 1. Stop when the HC-SR04 reads `20 cm` or less. Movement resumes only after
    the measured distance exceeds `25 cm`, preventing sensor noise from rapidly
    toggling the motors.
-2. Rotate with `T` when the target color is not visible, even if the ultrasonic
-   threshold is already passed.
+2. Rotate with `T` when the target color is not visible and no recent target
+   memory or forward burst is active.
 3. Stop briefly with `S` when the target color is first detected so the camera
    can settle.
 4. Steer with `L` or `R` to center the visible target horizontally in the image.
 5. Move forward with `F` in `1.0` second bursts when the target is centered
-   horizontally and reasonably centered vertically.
+   horizontally and is not too low in the image.
 6. Stop if the HC-SR04 threshold is passed while steering toward or moving
    toward the target.
-7. Sound the buzzer while the HC-SR04 stop remains active.
+7. Sound the buzzer for up to `3` seconds after the HC-SR04 stop first
+   activates.
 8. Stop when `S` is received or no valid command arrives for one second.
 
 Change `stopDistanceCm` in `arduino/arduino.ino` to adjust the stopping
@@ -123,18 +133,17 @@ distance. OpenCV sends framed commands such as `<T>`, `<L>`, `<R>`, `<F>`, and
 and serial, so adding or changing movement commands does not require changing
 the camera sketch.
 
-Search rotation uses `150 PWM`, target-tracking turns use `130 PWM`, and both
-get a short `180 PWM` kick to overcome static friction. When a target first
-becomes visible, OpenCV stops for `0.5` seconds, keeps the last valid target
-position for another `0.5` seconds if needed, then steers left/right until the
-target is centered and moves in `1.0` second forward bursts separated by `0.5`
-second re-check pauses. Adjust `searchTurnSpeed`, `trackTurnSpeed`,
-`turnKickSpeed`, `TARGET_CONFIRM_SECONDS`, `TARGET_CONFIRM_LOSS_SECONDS`,
-`APPROACH_BURST_SECONDS`, `RECHECK_SECONDS`, `CENTER_TOLERANCE_X_RATIO`, or
-`CENTER_TOLERANCE_Y_RATIO` if needed.
+Search rotation uses `150 PWM`, and target-tracking turns also use `150 PWM`.
+When a target first becomes visible, OpenCV stops for `0.5` seconds, keeps the
+last valid target position for another `0.5` seconds if needed, then steers
+left/right until the target is centered and moves in `1.0` second forward
+bursts separated by `0.5` second re-check pauses. Adjust
+`searchTurnSpeed`, `trackTurnSpeed`, `TARGET_CONFIRM_SECONDS`,
+`TARGET_CONFIRM_LOSS_SECONDS`, `APPROACH_BURST_SECONDS`, `RECHECK_SECONDS`,
+`CENTER_TOLERANCE_X_RATIO`, or `CENTER_TOLERANCE_Y_RATIO` if needed.
 
-The ESP32-CAM and Arduino serial bridge uses `9600 baud`, which is reliable for
-Arduino `SoftwareSerial`. Upload both sketches after changing this baud rate.
+The ESP32-CAM and Arduino serial bridge uses `115200 baud` in the current
+sketches. If you change this baud rate, update both sketches together.
 
 ## ESP32-CAM sketch
 
