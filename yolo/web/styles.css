@@ -254,6 +254,13 @@ button:disabled {
   font-variant-numeric: tabular-nums;
 }
 
+.control-help {
+  margin: 0;
+  color: #9ca9ba;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 input[type="range"] {
   accent-color: #4f82ff;
 }

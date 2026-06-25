@@ -11243,3 +11243,427 @@
 2026-06-25 00:14:36 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
 2026-06-25 00:14:36 cmd=S state=OBSTACLE RECOVERY DONE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
 2026-06-25 00:14:36 cmd=S state=RECOVERY SEARCH PAUSE src=RECOVERY_SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:37 detect.py started
+2026-06-25 00:18:40 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:57 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=12 cy=74 ex=-148 ey=-46 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:57 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-148 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:57 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-148 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:57 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:58 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=16 cy=73 ex=-144 ey=-47 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:58 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=19 cy=74 ex=-141 ey=-46 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:58 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-141 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:58 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-141 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:58 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=24 cy=75 ex=-136 ey=-45 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:58 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-136 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:58 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-136 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:58 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:59 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=38 cy=74 ex=-122 ey=-46 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:59 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-122 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:59 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=59 cy=77 ex=-101 ey=-43 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:59 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-101 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:18:59 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-101 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=112 cy=78 ex=-48 ey=-42 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-48 lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=147 cy=78 ex=-13 ey=-42 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-13 lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=187 cy=81 ex=27 ey=-39 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=192 cy=83 ex=32 ey=-37 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=194 cy=83 ex=34 ey=-37 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=192 cy=82 ex=32 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=193 cy=82 ex=33 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=192 cy=82 ex=32 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=193 cy=82 ex=33 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=192 cy=82 ex=32 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=193 cy=82 ex=33 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=190 cy=83 ex=30 ey=-37 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=191 cy=82 ex=31 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=193 cy=81 ex=33 ey=-39 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=192 cy=83 ex=32 ey=-37 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=191 cy=82 ex=31 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=191 cy=80 ex=31 ey=-40 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=191 cy=82 ex=31 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=190 cy=81 ex=30 ey=-39 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=190 cy=82 ex=30 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=189 cy=84 ex=29 ey=-36 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=190 cy=83 ex=30 ey=-37 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=191 cy=82 ex=31 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=192 cy=82 ex=32 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=191 cy=83 ex=31 ey=-37 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=192 cy=83 ex=32 ey=-37 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=193 cy=84 ex=33 ey=-36 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=192 cy=82 ex=32 ey=-38 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:00 cmd=F state=ADVANCING src=LIVE visible=1 cx=198 cy=83 ex=38 ey=-37 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=194 cy=84 ex=34 ey=-36 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=195 cy=84 ex=35 ey=-36 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=197 cy=84 ex=37 ey=-36 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=200 cy=83 ex=40 ey=-37 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=200 cy=86 ex=40 ey=-34 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=203 cy=86 ex=43 ey=-34 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=214 cy=89 ex=54 ey=-31 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=235 cy=94 ex=75 ey=-26 mex=-- lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=238 cy=93 ex=78 ey=-27 mex=-- lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=78 lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=247 cy=92 ex=87 ey=-28 mex=-- lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=247 cy=94 ex=87 ey=-26 mex=-- lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=87 lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=87 lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=167 cy=91 ex=7 ey=-29 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=7 lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=147 cy=91 ex=-13 ey=-29 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=148 cy=91 ex=-12 ey=-29 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=146 cy=91 ex=-14 ey=-29 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=148 cy=90 ex=-12 ey=-30 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=151 cy=90 ex=-9 ey=-30 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=154 cy=90 ex=-6 ey=-30 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:01 cmd=F state=ADVANCING src=LIVE visible=1 cx=153 cy=90 ex=-7 ey=-30 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=152 cy=90 ex=-8 ey=-30 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=153 cy=90 ex=-7 ey=-30 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=153 cy=92 ex=-7 ey=-28 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=156 cy=91 ex=-4 ey=-29 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=162 cy=92 ex=2 ey=-28 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=164 cy=92 ex=4 ey=-28 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=167 cy=93 ex=7 ey=-27 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=170 cy=93 ex=10 ey=-27 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=171 cy=93 ex=11 ey=-27 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=178 cy=94 ex=18 ey=-26 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=180 cy=95 ex=20 ey=-25 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=184 cy=96 ex=24 ey=-24 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=186 cy=96 ex=26 ey=-24 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=197 cy=97 ex=37 ey=-23 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=213 cy=103 ex=53 ey=-17 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=217 cy=102 ex=57 ey=-18 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=F state=ADVANCING src=LIVE visible=1 cx=217 cy=104 ex=57 ey=-16 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=218 cy=104 ex=58 ey=-16 mex=-- lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=220 cy=110 ex=60 ey=-10 mex=-- lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=60 lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=222 cy=107 ex=62 ey=-13 mex=-- lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=222 cy=108 ex=62 ey=-12 mex=-- lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=224 cy=107 ex=64 ey=-13 mex=-- lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=64 lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=226 cy=106 ex=66 ey=-14 mex=-- lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=R state=TRACK RIGHT src=LIVE visible=1 cx=223 cy=108 ex=63 ey=-12 mex=-- lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=R state=REACQUIRE NUDGE R src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=63 lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:02 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=63 lock=0 last=R blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=85 cy=103 ex=-75 ey=-17 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=87 cy=103 ex=-73 ey=-17 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=86 cy=101 ex=-74 ey=-19 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=88 cy=102 ex=-72 ey=-18 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=87 cy=101 ex=-73 ey=-19 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=90 cy=100 ex=-70 ey=-20 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=89 cy=102 ex=-71 ey=-18 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=89 cy=101 ex=-71 ey=-19 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=88 cy=101 ex=-72 ey=-19 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=TRACK PAUSE L src=LIVE visible=1 cx=89 cy=101 ex=-71 ey=-19 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-71 lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=89 cy=101 ex=-71 ey=-19 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-71 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=89 cy=101 ex=-71 ey=-19 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-71 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=89 cy=102 ex=-71 ey=-18 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=89 cy=101 ex=-71 ey=-19 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=88 cy=101 ex=-72 ey=-19 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-72 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=89 cy=101 ex=-71 ey=-19 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=90 cy=100 ex=-70 ey=-20 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-70 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=110 cy=100 ex=-50 ey=-20 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-50 lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=137 cy=102 ex=-23 ey=-18 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-23 lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=167 cy=104 ex=7 ey=-16 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=167 cy=104 ex=7 ey=-16 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=F state=ADVANCING src=LIVE visible=1 cx=168 cy=103 ex=8 ey=-17 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:03 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=160 cy=102 ex=0 ey=-18 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=153 cy=102 ex=-7 ey=-18 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=153 cy=103 ex=-7 ey=-17 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=151 cy=102 ex=-9 ey=-18 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=142 cy=104 ex=-18 ey=-16 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=145 cy=102 ex=-15 ey=-18 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=143 cy=102 ex=-17 ey=-18 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=144 cy=101 ex=-16 ey=-19 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=136 cy=106 ex=-24 ey=-14 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=136 cy=103 ex=-24 ey=-17 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=135 cy=108 ex=-25 ey=-12 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=135 cy=106 ex=-25 ey=-14 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=ADVANCING src=LIVE visible=1 cx=135 cy=112 ex=-25 ey=-8 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:04 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:06 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:09 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:10 cmd=S state=OBSTACLE RECOVERY DONE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:10 cmd=S state=OBSTACLE ALERT src=RECOVERY_SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:12 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:12 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=195 cy=120 ex=35 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:12 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:12 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=198 cy=120 ex=38 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:12 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:12 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=193 cy=120 ex=33 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:12 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:12 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=196 cy=120 ex=36 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:13 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:13 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=196 cy=120 ex=36 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:13 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:13 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=199 cy=120 ex=39 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:13 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:13 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=196 cy=120 ex=36 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:13 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:13 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=196 cy=120 ex=36 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:13 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:13 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:13 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=190 cy=122 ex=30 ey=2 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=171 cy=119 ex=11 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=168 cy=116 ex=8 ey=-4 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=166 cy=116 ex=6 ey=-4 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=173 cy=115 ex=13 ey=-5 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=171 cy=114 ex=11 ey=-6 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=178 cy=111 ex=18 ey=-9 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=S state=OBSTACLE RECOVERY DONE src=LIVE visible=1 cx=172 cy=111 ex=12 ey=-9 mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:14 cmd=S state=RECOVERY SEARCH PAUSE src=RECOVERY_SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:16 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:28 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:31 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:32 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:32 cmd=S state=OBSTACLE RECOVERY DONE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:32 cmd=S state=RECOVERY SEARCH PAUSE src=RECOVERY_SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:34 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:36 cmd=L state=TRACK LEFT src=LIVE visible=1 cx=31 cy=89 ex=-129 ey=-31 mex=-- lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:36 cmd=L state=REACQUIRE NUDGE L src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-129 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:36 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-129 lock=0 last=L blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=S state=CENTER CONFIRM 1/5 src=LIVE visible=1 cx=135 cy=87 ex=-25 ey=-33 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=S state=CENTER CONFIRM 2/5 src=LIVE visible=1 cx=133 cy=86 ex=-27 ey=-34 mex=-- lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=S state=REACQUIRE HOLD src=MEMORY visible=0 cx=-- cy=-- ex=-- ey=-- mex=-27 lock=0 last=S blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=132 cy=85 ex=-28 ey=-35 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=131 cy=85 ex=-29 ey=-35 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=132 cy=85 ex=-28 ey=-35 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=131 cy=85 ex=-29 ey=-35 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=127 cy=85 ex=-33 ey=-35 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=135 cy=88 ex=-25 ey=-32 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=139 cy=90 ex=-21 ey=-30 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=148 cy=92 ex=-12 ey=-28 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=152 cy=92 ex=-8 ey=-28 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=154 cy=95 ex=-6 ey=-25 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=163 cy=95 ex=3 ey=-25 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=167 cy=97 ex=7 ey=-23 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=174 cy=101 ex=14 ey=-19 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:37 cmd=F state=ADVANCING src=LIVE visible=1 cx=182 cy=100 ex=22 ey=-20 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=191 cy=102 ex=31 ey=-18 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=192 cy=104 ex=32 ey=-16 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=191 cy=105 ex=31 ey=-15 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=194 cy=104 ex=34 ey=-16 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=192 cy=106 ex=32 ey=-14 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=200 cy=114 ex=40 ey=-6 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=205 cy=108 ex=45 ey=-12 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=207 cy=112 ex=47 ey=-8 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=205 cy=112 ex=45 ey=-8 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=202 cy=113 ex=42 ey=-7 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=199 cy=113 ex=39 ey=-7 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=198 cy=114 ex=38 ey=-6 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=195 cy=114 ex=35 ey=-6 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=192 cy=112 ex=32 ey=-8 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=188 cy=115 ex=28 ey=-5 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=187 cy=114 ex=27 ey=-6 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=187 cy=117 ex=27 ey=-3 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=187 cy=120 ex=27 ey=0 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=187 cy=117 ex=27 ey=-3 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=ADVANCING src=LIVE visible=1 cx=199 cy=115 ex=39 ey=-5 mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=F state=APPROACH LOCK src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=1 last=F blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=208 cy=118 ex=48 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:38 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=235 cy=119 ex=75 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=235 cy=117 ex=75 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=240 cy=108 ex=80 ey=-12 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=236 cy=119 ex=76 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=236 cy=108 ex=76 ey=-12 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=120 ex=71 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=119 ex=73 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=118 ex=72 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=230 cy=119 ex=70 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=119 ex=73 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=230 cy=120 ex=70 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=118 ex=71 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=119 ex=72 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=118 ex=74 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=119 ex=71 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=119 ex=72 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=120 ex=72 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=230 cy=119 ex=70 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=117 ex=74 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=116 ex=72 ey=-4 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=119 ex=72 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=118 ex=74 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=235 cy=118 ex=75 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=237 cy=108 ex=77 ey=-12 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=119 ex=73 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=119 ex=72 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=118 ex=72 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=119 ex=71 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=116 ex=73 ey=-4 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=119 ex=71 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=118 ex=71 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=230 cy=119 ex=70 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=237 cy=107 ex=77 ey=-13 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=120 ex=71 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=117 ex=72 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:39 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=237 cy=107 ex=77 ey=-13 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=238 cy=108 ex=78 ey=-12 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=118 ex=74 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=119 ex=73 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=118 ex=74 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=230 cy=120 ex=70 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=229 cy=120 ex=69 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=120 ex=72 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=120 ex=71 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=117 ex=73 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=119 ex=71 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=229 cy=120 ex=69 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=118 ex=72 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=117 ex=73 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=230 cy=118 ex=70 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=236 cy=107 ex=76 ey=-13 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=119 ex=71 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=229 cy=119 ex=69 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=116 ex=74 ey=-4 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=118 ex=72 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=119 ex=71 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=114 ex=72 ey=-6 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=119 ex=72 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=230 cy=119 ex=70 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=119 ex=71 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=114 ex=72 ey=-6 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=230 cy=118 ex=70 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=117 ex=72 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=118 ex=72 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=118 ex=72 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=119 ex=71 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=117 ex=74 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=119 ex=73 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=116 ex=72 ey=-4 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=117 ex=74 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:40 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=118 ex=74 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=236 cy=107 ex=76 ey=-13 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=117 ex=72 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=118 ex=72 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=119 ex=73 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=230 cy=119 ex=70 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=119 ex=72 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=117 ex=73 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=119 ex=72 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=115 ex=73 ey=-5 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=230 cy=119 ex=70 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=118 ex=74 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=119 ex=73 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=116 ex=74 ey=-4 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=117 ex=73 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=118 ex=71 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=119 ex=71 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=120 ex=71 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=119 ex=72 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=118 ex=71 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=117 ex=72 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=119 ex=71 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=230 cy=120 ex=70 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=118 ex=71 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=234 cy=118 ex=74 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=114 ex=73 ey=-6 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=233 cy=118 ex=73 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=237 cy=108 ex=77 ey=-12 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=231 cy=118 ex=71 ey=-2 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=S state=OBSTACLE ALERT src=LIVE visible=1 cx=232 cy=115 ex=72 ey=-5 mex=-- lock=0 last=-- blocked=1 recovery=ALERT mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=232 cy=117 ex=72 ey=-3 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=228 cy=120 ex=68 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=230 cy=119 ex=70 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=230 cy=120 ex=70 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=230 cy=119 ex=70 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:41 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=232 cy=119 ex=72 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=231 cy=119 ex=71 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=229 cy=120 ex=69 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=230 cy=116 ex=70 ey=-4 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=230 cy=119 ex=70 ey=-1 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=230 cy=120 ex=70 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=235 cy=120 ex=75 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=236 cy=120 ex=76 ey=0 mex=-- lock=0 last=-- blocked=1 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=233 cy=120 ex=73 ey=0 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=233 cy=119 ex=73 ey=-1 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=230 cy=119 ex=70 ey=-1 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=234 cy=116 ex=74 ey=-4 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=233 cy=115 ex=73 ey=-5 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=230 cy=113 ex=70 ey=-7 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=229 cy=113 ex=69 ey=-7 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=224 cy=109 ex=64 ey=-11 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=223 cy=110 ex=63 ey=-10 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=222 cy=110 ex=62 ey=-10 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=218 cy=108 ex=58 ey=-12 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=214 cy=107 ex=54 ey=-13 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=214 cy=106 ex=54 ey=-14 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=216 cy=106 ex=56 ey=-14 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=217 cy=106 ex=57 ey=-14 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=B state=OBSTACLE REVERSE src=LIVE visible=1 cx=218 cy=104 ex=58 ey=-16 mex=-- lock=0 last=-- blocked=0 recovery=REVERSE mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:42 cmd=S state=OBSTACLE RECOVERY DONE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 00:19:43 cmd=S state=RECOVERY SEARCH PAUSE src=RECOVERY_SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/2 run=4 finished=0
+2026-06-25 18:06:42 detect.py started
+2026-06-25 18:06:45 cmd=S state=SEARCH PAUSE src=SEARCH visible=0 cx=-- cy=-- ex=-- ey=-- mex=-- lock=0 last=-- blocked=0 recovery=-- mode=single queue=0/0 run=0 finished=0
