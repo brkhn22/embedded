@@ -156,6 +156,145 @@ Default runtime values:
 | Obstacle reverse duration | `1.0 s` |
 | Obstacle search duration | `2.0 s` |
 
+### `detect.py` Runtime Variables
+
+The YOLO control loop keeps a larger set of runtime variables than the
+high-level architecture alone shows. The most important variables are grouped
+below so the control flow in `yolo/detect.py` is easier to understand and
+defend during presentation or code review.
+
+#### Runtime Inputs and Configuration
+
+- `ESP_IP`, `ESP_PORT`, `STREAM_URL`: Define where the laptop reaches the
+  ESP32-CAM command bridge and MJPEG stream.
+- `MODEL_PATH`: YOLO model file path. Default is `yolo11n.pt`.
+- `TARGET_CLASS`, `CONFIDENCE`: Startup defaults for the selected COCO class
+  and detection confidence threshold.
+- `WEB_CONTROL_URL`: Address of the local YOLO control panel backend.
+- `SEND_INTERVAL`: Minimum resend interval for repeated commands.
+- `SEARCH_TURN_SECONDS`, `SEARCH_PAUSE_SECONDS`: Search-cycle pulse timings.
+- `TRACK_TURN_SECONDS`, `TRACK_PAUSE_SECONDS`: Centering turn/pause timings.
+- `TARGET_REACQUIRE_HOLD_SECONDS`, `REACQUIRE_NUDGE_SECONDS`: Short-term memory
+  timings used after the target is lost.
+- `TURN_REVERSAL_CONFIRM_FRAMES`, `TURN_REVERSAL_STOP_SECONDS`: Protection
+  against rapid left-right oscillation.
+- `CENTER_CONFIRM_FRAMES`, `CENTER_CONFIRM_WINDOW`: Number of centered frames
+  required before committing to forward motion.
+- `CENTER_TOLERANCE_X_RATIO`, `CENTER_TOLERANCE_Y_RATIO`: Horizontal and
+  vertical acceptance regions relative to frame size.
+- `OBSTACLE_ALERT_SECONDS`, `OBSTACLE_REVERSE_SECONDS`,
+  `OBSTACLE_SEARCH_SECONDS`: Recovery timings after Arduino distance-stop.
+
+#### Threshold Mode Variables
+
+The current detector also switches the Arduino between two obstacle threshold
+modes by sending extra serial commands.
+
+- `THRESHOLD_MODE_SEARCH_COMMAND = "Q"`: Requests the search obstacle mode.
+- `THRESHOLD_MODE_MOTION_COMMAND = "W"`: Requests the motion obstacle mode.
+- `SEARCH_STOP_THRESHOLD_CM`, `SEARCH_RESUME_THRESHOLD_CM`: Search-mode
+  obstacle thresholds. These are tighter than motion mode.
+- `MOTION_STOP_THRESHOLD_CM`, `MOTION_RESUME_THRESHOLD_CM`: Motion-mode
+  thresholds used while approaching a target.
+- `last_threshold_mode_command`: Last threshold-mode command sent to avoid
+  redundant writes.
+- `last_threshold_mode_send_time`: Last send time for threshold-mode updates.
+- `last_search_threshold_mode`: Remembers which threshold profile Arduino was
+  using when an obstacle feedback event arrived.
+
+#### Vision and Frame State
+
+- `cap`: OpenCV video reader connected to the ESP32-CAM stream.
+- `fps`: Smoothed frame-rate estimate used for telemetry.
+- `frame_id`: Incrementing frame counter for structured metrics logging.
+- `target_class_id`: Numeric model class ID matching the currently selected
+  COCO class.
+- `active_target_class`, `active_confidence`: The live class and confidence
+  currently in effect after web-panel updates are applied.
+- `best_box`, `candidate_area`, `confidence_score`: The chosen detection box,
+  its pixel area, and its confidence score for the current frame.
+- `target_visible`: Whether a valid target was found in the current frame.
+- `target_center_x`, `target_center_y`: Center of the chosen detection box.
+- `center_error_x`, `center_error_y`: Horizontal and vertical offset from the
+  image center. These are core tracking metrics.
+- `memory_error_x`: Horizontal error of the last remembered target position
+  when the target is temporarily lost.
+
+#### Command and Output State
+
+- `last_command`, `last_send_time`: Prevent command flooding and support
+  periodic refresh.
+- `last_led_command`, `last_led_send_time`: Same pattern for RGB LED status
+  commands.
+- `feedback_buffer`: Partial TCP feedback buffer used while parsing framed
+  serial messages coming back through ESP32-CAM.
+- `decision_source`: Labels whether the current command came from live
+  detection, memory, search, or recovery logic.
+- `detection_state`: Human-readable control state such as `TRACK LEFT`,
+  `ADVANCING`, `SEARCH TURN`, or `OBSTACLE ALERT`.
+
+#### Target Tracking Memory
+
+- `last_target_box`: Most recent valid bounding box, used for visual memory.
+- `last_target_center`: Most recent valid target center, used for reacquire
+  nudges.
+- `last_target_command`: Last target-driven motion command before the target
+  disappeared.
+- `last_target_seen_at`: Monotonic timestamp of the last valid target sighting.
+- `approach_locked`: Allows the robot to keep moving forward briefly even if
+  the target disappears at close range.
+- `center_confirm_history`: Sliding window of recent centered/not-centered
+  observations used before moving forward.
+
+#### Search and Turn Control
+
+- `search_phase`, `search_phase_started`: Alternate the robot between search
+  turning and search pause.
+- `active_turn_direction`: Tracks the turn direction currently being executed.
+- `pending_turn_direction`, `pending_turn_frames`, `pending_turn_since`:
+  Confirm a reversal before switching from left to right or vice versa.
+- `track_phase`, `track_phase_started`, `track_phase_direction`: Alternate
+  tracking turns and pauses while centering the target.
+- `reacquire_nudge_direction`, `reacquire_nudge_until`: Short corrective nudge
+  state used when the target has just been lost.
+
+#### Obstacle Recovery State
+
+- `arduino_obstacle_blocked`: Latest obstacle-blocked status reported from the
+  Arduino.
+- `obstacle_recovery_phase`: Current recovery sub-state, such as `ALERT` or
+  `REVERSE`.
+- `obstacle_alert_started`, `obstacle_reverse_started`: Timestamps for those
+  recovery phases.
+- `obstacle_search_until`: Prevents immediate target reacquisition after a
+  recovery cycle and forces a short search period.
+- `latest_distance_cm`, `latest_distance_monotonic_ns`: Most recent HC-SR04
+  distance value and its arrival time, captured from Arduino telemetry.
+
+#### Queue Mode State
+
+- `active_control_mode`: Current operating mode, `single` or `queue`.
+- `queue_targets`: Ordered COCO target list selected in queue mode.
+- `queue_index`: Index of the currently active queued target.
+- `queue_run_id`: Monotonic run identifier incremented whenever a new queue
+  execution starts.
+- `queue_finished`: Whether the active queue run has completed.
+- `queue_target_seen`: Whether the current queued target has been seen at all.
+- `queue_target_last_seen_at`: Last time the current queued target was visible.
+- `queue_target_forward_started`: Whether the current queued target has
+  produced at least one forward approach command. This is used before allowing
+  queue advancement after obstacle recovery.
+
+#### Logging and Telemetry State
+
+- `DEBUG_LOG_PATH`: Plain-text debug log path.
+- `METRICS_LOG_PATH`: Structured JSONL metrics log path.
+- `last_logged_signature`: Deduplicates repeated debug lines so the plain-text
+  log stays readable.
+- `append_debug_log(...)`: Writes human-readable state transitions.
+- `append_metrics_log(...)`: Writes structured event records used by
+  `yolo/analyze_metrics.py`.
+
 ### Laptop: YOLO Web Server
 
 Main file: `yolo/control_server.py`
