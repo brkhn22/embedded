@@ -1,8 +1,10 @@
+import json
 import os
 import socket
 import sys
 import time
 from collections import deque
+from datetime import datetime, timezone
 from pathlib import Path
 
 import cv2
@@ -35,10 +37,18 @@ WEB_CONTROL_URL = os.environ.get("YOLO_WEB_URL", "http://127.0.0.1:8001")
 DEBUG_LOG_PATH = Path(
     os.environ.get("YOLO_DEBUG_LOG", str(PROJECT_ROOT / "yolo" / "detect_debug.log"))
 )
+METRICS_LOG_PATH = Path(
+    os.environ.get(
+        "YOLO_METRICS_LOG",
+        str(PROJECT_ROOT / "yolo" / "metrics_log.jsonl"),
+    )
+)
 
 SEND_INTERVAL = 0.1
 LED_TARGET_FOUND_COMMAND = "G"
 LED_SEARCHING_COMMAND = "N"
+THRESHOLD_MODE_SEARCH_COMMAND = "Q"
+THRESHOLD_MODE_MOTION_COMMAND = "W"
 SEARCH_TURN_SECONDS = float(os.environ.get("YOLO_SEARCH_TURN_SECONDS", "0.35"))
 SEARCH_PAUSE_SECONDS = float(os.environ.get("YOLO_SEARCH_PAUSE_SECONDS", "0.5"))
 TRACK_TURN_SECONDS = float(os.environ.get("YOLO_TRACK_TURN_SECONDS", "0.08"))
@@ -72,6 +82,18 @@ OBSTACLE_REVERSE_SECONDS = float(
 OBSTACLE_SEARCH_SECONDS = float(
     os.environ.get("YOLO_OBSTACLE_SEARCH_SECONDS", "2.0")
 )
+SEARCH_STOP_THRESHOLD_CM = 10.0
+SEARCH_RESUME_THRESHOLD_CM = 15.0
+MOTION_STOP_THRESHOLD_CM = 20.0
+MOTION_RESUME_THRESHOLD_CM = 25.0
+
+
+def get_obstacle_thresholds_for_search_mode(search_mode):
+    if search_mode:
+        return SEARCH_STOP_THRESHOLD_CM, SEARCH_RESUME_THRESHOLD_CM
+    return MOTION_STOP_THRESHOLD_CM, MOTION_RESUME_THRESHOLD_CM
+
+
 def connect_to_esp():
     while True:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -155,6 +177,28 @@ def append_debug_log(message):
         log_file.write(f"{timestamp} {message}\n")
 
 
+def isoformat_from_ns(timestamp_ns):
+    return datetime.fromtimestamp(
+        timestamp_ns / 1_000_000_000,
+        tz=timezone.utc,
+    ).astimezone().isoformat(timespec="milliseconds")
+
+
+def append_metrics_log(event_type, **fields):
+    wall_time_ns = time.time_ns()
+    monotonic_ns = time.monotonic_ns()
+    payload = {
+        "event": event_type,
+        "wall_time": isoformat_from_ns(wall_time_ns),
+        "wall_time_ns": wall_time_ns,
+        "monotonic_ns": monotonic_ns,
+        **fields,
+    }
+    with METRICS_LOG_PATH.open("a", encoding="utf-8") as log_file:
+        json.dump(payload, log_file, ensure_ascii=True)
+        log_file.write("\n")
+
+
 model = load_model()
 sock = connect_to_esp()
 cap = cv2.VideoCapture(STREAM_URL)
@@ -168,8 +212,11 @@ last_command = None
 last_send_time = 0
 last_led_command = None
 last_led_send_time = 0
+last_threshold_mode_command = None
+last_threshold_mode_send_time = 0
 feedback_buffer = ""
 arduino_obstacle_blocked = False
+last_search_threshold_mode = False
 last_target_box = None
 last_target_center = None
 last_target_command = None
@@ -205,9 +252,21 @@ queue_target_seen = False
 queue_target_last_seen_at = None
 queue_target_forward_started = False
 last_logged_signature = None
+latest_distance_cm = None
+latest_distance_monotonic_ns = None
+frame_id = 0
 
 print(f"YOLO hedef sinifi: {TARGET_CLASS}")
 append_debug_log("detect.py started")
+append_metrics_log(
+    "run_started",
+    model_path=MODEL_PATH,
+    esp_ip=ESP_IP,
+    esp_port=ESP_PORT,
+    stream_url=STREAM_URL,
+    target_class=TARGET_CLASS,
+    confidence=CONFIDENCE,
+)
 
 try:
     while True:
@@ -318,10 +377,27 @@ try:
             feedback_buffer,
         )
         for feedback_message in feedback_messages:
+            if feedback_message.startswith("D:"):
+                try:
+                    latest_distance_cm = float(feedback_message.split(":", 1)[1])
+                    latest_distance_monotonic_ns = time.monotonic_ns()
+                    append_metrics_log(
+                        "distance_feedback",
+                        distance_cm=latest_distance_cm,
+                    )
+                except ValueError:
+                    pass
+                continue
+
             if feedback_message == "B1":
                 if not arduino_obstacle_blocked:
                     print("Arduino mesafe engeli: motorlar durduruldu.")
                 arduino_obstacle_blocked = True
+                stop_threshold_cm, resume_threshold_cm = (
+                    get_obstacle_thresholds_for_search_mode(
+                        last_search_threshold_mode
+                    )
+                )
                 if obstacle_recovery_phase is None:
                     obstacle_recovery_phase = "ALERT"
                     obstacle_alert_started = time.monotonic()
@@ -332,10 +408,51 @@ try:
                 last_target_seen_at = None
                 reacquire_nudge_direction = None
                 reacquire_nudge_until = 0.0
+                append_metrics_log(
+                    "obstacle_state",
+                    blocked=True,
+                    distance_cm=latest_distance_cm,
+                    distance_age_ms=(
+                        None
+                        if latest_distance_monotonic_ns is None
+                        else round(
+                            (
+                                time.monotonic_ns() - latest_distance_monotonic_ns
+                            )
+                            / 1_000_000,
+                            3,
+                        )
+                    ),
+                    stop_threshold_cm=stop_threshold_cm,
+                    resume_threshold_cm=resume_threshold_cm,
+                )
             elif feedback_message == "B0":
                 if arduino_obstacle_blocked:
                     print("Arduino mesafe engeli temizlendi.")
                 arduino_obstacle_blocked = False
+                stop_threshold_cm, resume_threshold_cm = (
+                    get_obstacle_thresholds_for_search_mode(
+                        last_search_threshold_mode
+                    )
+                )
+                append_metrics_log(
+                    "obstacle_state",
+                    blocked=False,
+                    distance_cm=latest_distance_cm,
+                    distance_age_ms=(
+                        None
+                        if latest_distance_monotonic_ns is None
+                        else round(
+                            (
+                                time.monotonic_ns() - latest_distance_monotonic_ns
+                            )
+                            / 1_000_000,
+                            3,
+                        )
+                    ),
+                    stop_threshold_cm=stop_threshold_cm,
+                    resume_threshold_cm=resume_threshold_cm,
+                )
 
         ret, frame = cap.read()
         if not ret:
@@ -343,6 +460,8 @@ try:
             break
 
         frame_time = time.monotonic()
+        frame_time_ns = time.monotonic_ns()
+        frame_id += 1
         frame_duration = frame_time - last_frame_time
         last_frame_time = frame_time
         if frame_duration > 0:
@@ -807,9 +926,82 @@ try:
         ):
             active_turn_direction = None
 
+        append_metrics_log(
+            "frame_decision",
+            frame_id=frame_id,
+            frame_monotonic_ns=frame_time_ns,
+            frame_width=frame_width,
+            frame_height=frame_height,
+            target_class=active_target_class,
+            control_mode=active_control_mode,
+            queue_active=queue_running,
+            queue_index=queue_index,
+            queue_total=len(queue_targets),
+            queue_run_id=queue_run_id,
+            queue_finished=queue_finished,
+            target_visible=target_visible,
+            detection_state=detection_state,
+            decision_source=decision_source,
+            confidence=round(confidence_score, 4),
+            candidate_area=round(candidate_area, 2),
+            target_center_x=target_center_x,
+            target_center_y=target_center_y,
+            center_error_x=center_error_x,
+            center_error_y=center_error_y,
+            memory_error_x=memory_error_x,
+            approach_locked=approach_locked,
+            blocked=arduino_obstacle_blocked,
+            latest_distance_cm=latest_distance_cm,
+            bbox=None
+            if best_box is None
+            else {
+                "x1": best_box[0],
+                "y1": best_box[1],
+                "x2": best_box[2],
+                "y2": best_box[3],
+            },
+            command=command,
+        )
+
         current_time = time.time()
+        search_threshold_mode = detection_state in (
+            "SEARCH TURN",
+            "SEARCH PAUSE",
+            "RECOVERY SEARCH TURN",
+            "RECOVERY SEARCH PAUSE",
+        )
+        threshold_mode_command = (
+            THRESHOLD_MODE_SEARCH_COMMAND
+            if search_threshold_mode
+            else THRESHOLD_MODE_MOTION_COMMAND
+        )
+        if (
+            threshold_mode_command != last_threshold_mode_command
+            or current_time - last_threshold_mode_send_time >= SEND_INTERVAL
+        ):
+            send_command(sock, threshold_mode_command)
+            last_threshold_mode_command = threshold_mode_command
+            last_threshold_mode_send_time = current_time
+            last_search_threshold_mode = search_threshold_mode
+
         if command != last_command or current_time - last_send_time >= SEND_INTERVAL:
+            command_sent_monotonic_ns = time.monotonic_ns()
             send_command(sock, command)
+            append_metrics_log(
+                "command_sent",
+                frame_id=frame_id,
+                command=command,
+                detection_state=detection_state,
+                target_class=active_target_class,
+                target_visible=target_visible,
+                center_error_x=center_error_x,
+                center_error_y=center_error_y,
+                latest_distance_cm=latest_distance_cm,
+                command_latency_ms=round(
+                    (command_sent_monotonic_ns - frame_time_ns) / 1_000_000,
+                    3,
+                ),
+            )
             last_command = command
             last_send_time = current_time
 
@@ -823,6 +1015,13 @@ try:
             or current_time - last_led_send_time >= SEND_INTERVAL
         ):
             send_command(sock, led_command)
+            append_metrics_log(
+                "led_command_sent",
+                frame_id=frame_id,
+                command=led_command,
+                target_visible=target_visible,
+                approach_locked=approach_locked,
+            )
             last_led_command = led_command
             last_led_send_time = current_time
 
@@ -982,6 +1181,7 @@ try:
             send_command(sock, "S")
             break
 finally:
+    append_metrics_log("run_stopped")
     cap.release()
     sock.close()
     web_control.stop()

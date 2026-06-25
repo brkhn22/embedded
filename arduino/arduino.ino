@@ -25,10 +25,12 @@ const int redLedPin = A1;
 
 const int forwardSpeed = 120;
 const int reverseSpeed = 110;
-const int searchTurnSpeed = 150;
-const int trackTurnSpeed = 150;
-const float stopDistanceCm = 20.0;
-const float resumeDistanceCm = 25.0;
+const int searchTurnSpeed = 140;
+const int trackTurnSpeed = 140;
+const float searchStopDistanceCm = 10.0;
+const float searchResumeDistanceCm = 15.0;
+const float motionStopDistanceCm = 20.0;
+const float motionResumeDistanceCm = 25.0;
 const unsigned long distanceReadIntervalMs = 60;
 const unsigned long obstacleReportIntervalMs = 250;
 const unsigned long obstacleBuzzerDurationMs = 3000;
@@ -39,6 +41,7 @@ const unsigned int buzzerAlertHz = 2400;
 char currentCommand = 'S';
 char pendingCommand = '\0';
 bool receivingCommand = false;
+bool searchThresholdMode = false;
 float distanceCm = -1.0;
 bool obstacleBlocked = false;
 unsigned long lastCommandTime = 0;
@@ -48,7 +51,10 @@ unsigned long obstacleAlertStartedTime = 0;
 
 bool isMotorCommand(char command);
 bool isLedCommand(char command);
+bool isThresholdModeCommand(char command);
 void setTargetLed(bool targetFound);
+float getActiveStopDistanceCm();
+float getActiveResumeDistanceCm();
 
 void setup() {
   Serial.begin(9600);
@@ -86,12 +92,16 @@ void loop() {
       receivingCommand = true;
       pendingCommand = '\0';
     } else if (receivingCommand && (
-        isMotorCommand(received) || isLedCommand(received))) {
+        isMotorCommand(received)
+        || isLedCommand(received)
+        || isThresholdModeCommand(received))) {
       pendingCommand = received;
     } else if (receivingCommand && received == '>') {
       if (pendingCommand != '\0') {
         if (isLedCommand(pendingCommand)) {
           setTargetLed(pendingCommand == 'G');
+        } else if (isThresholdModeCommand(pendingCommand)) {
+          searchThresholdMode = pendingCommand == 'Q';
         } else {
           bool commandChanged = currentCommand != pendingCommand;
           currentCommand = pendingCommand;
@@ -118,10 +128,12 @@ void loop() {
 
     if (distanceCm > 0) {
       bool wasObstacleBlocked = obstacleBlocked;
+      float activeStopDistanceCm = getActiveStopDistanceCm();
+      float activeResumeDistanceCm = getActiveResumeDistanceCm();
       if (obstacleBlocked) {
-        obstacleBlocked = distanceCm < resumeDistanceCm;
+        obstacleBlocked = distanceCm < activeResumeDistanceCm;
       } else {
-        obstacleBlocked = distanceCm <= stopDistanceCm;
+        obstacleBlocked = distanceCm <= activeStopDistanceCm;
       }
 
       if (!wasObstacleBlocked && obstacleBlocked) {
@@ -132,6 +144,9 @@ void loop() {
         obstacleBlocked != wasObstacleBlocked
         || now - lastObstacleReportTime >= obstacleReportIntervalMs
       ) {
+        espSerial.print("<D:");
+        espSerial.print(distanceCm, 1);
+        espSerial.print(">");
         espSerial.print(obstacleBlocked ? "<B1>" : "<B0>");
         lastObstacleReportTime = now;
       }
@@ -193,9 +208,27 @@ bool isLedCommand(char command) {
   return command == 'G' || command == 'N';
 }
 
+bool isThresholdModeCommand(char command) {
+  return command == 'Q' || command == 'W';
+}
+
 void setTargetLed(bool targetFound) {
   digitalWrite(greenLedPin, targetFound ? LOW : HIGH);
   digitalWrite(redLedPin, targetFound ? HIGH : LOW);
+}
+
+float getActiveStopDistanceCm() {
+  if (searchThresholdMode) {
+    return searchStopDistanceCm;
+  }
+  return motionStopDistanceCm;
+}
+
+float getActiveResumeDistanceCm() {
+  if (searchThresholdMode) {
+    return searchResumeDistanceCm;
+  }
+  return motionResumeDistanceCm;
 }
 
 float readDistanceCm() {
