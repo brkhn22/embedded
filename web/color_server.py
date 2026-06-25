@@ -195,7 +195,7 @@ def run_color_server(host="0.0.0.0", port=8000):
         (host, port),
         _handler_factory(settings, vision_status, web_root),
     )
-    print(f"Megatron control panel: http://localhost:{port}")
+    print(f"Spectra control panel: http://localhost:{port}")
     print("Press Ctrl+C to stop the web server.")
     try:
         server.serve_forever()

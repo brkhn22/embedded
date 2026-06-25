@@ -1,4 +1,4 @@
-# Megatron embedded
+# Spectra embedded
 
 ## Dynamic target color
 

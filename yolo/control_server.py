@@ -226,7 +226,7 @@ def run_yolo_server(host="0.0.0.0", port=8001):
         (host, port),
         _handler_factory(settings, vision_status, web_root),
     )
-    print(f"Megatron YOLO panel: http://localhost:{port}")
+    print(f"Spectra YOLO panel: http://localhost:{port}")
     print("Press Ctrl+C to stop the web server.")
     try:
         server.serve_forever()
